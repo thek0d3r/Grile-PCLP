@@ -1,5 +1,798 @@
 [
-    { "id": 1, "question": "What is the capital of France?", "ansList": ["Paris", "Bucharest", "Budapest"], "correct": ["Paris"] },
-    { "id": 2, "question": "What is 2 + 2?", "ansList": ["2", "4", "6"], "correct": ["4", "2"] },
-    { "id": 3, "question": "Who wrote 'Romeo and Juliet'?", "ansList": ["Mihai Eminescu", "Mihail Sadoveanu", "William Shakespeare"], "correct": ["William Shakespeare"] }
+  {
+    "id": 1,
+    "question": "1. Care din urmatoarele actiuni au loc la compilare?",
+    "ansList": [
+      "a) analiza lexicala",
+      "d)analiza sintactica",
+      "e) generarea codului obiect"
+    ],
+    "correct": [
+      "a) analiza lexicala",
+      "d)analiza sintactica",
+      "e) generarea codului obiect"
+    ]
+  },
+  {
+    "id": 2,
+    "question": "2. Fisierele header, furnizate alaturi de biblioteci de module cod obiect, impreuna cu un compilator, contin:",
+    "ansList": [
+      "a) definitiile functiilor de biblioteca",
+      "b) macro-definitii",
+      "c) prototipurile functiilor de biblioteca"
+    ],
+    "correct": [
+      "b) macro-definitii",
+      "c) prototipurile functiilor de biblioteca"
+    ]
+  },
+  {
+    "id": 3,
+    "question": "3. La preprocesarea unui fisier sursa C",
+    "ansList": [
+      "a) se includ functiile de biblioteca",
+      "b) se obtine o noua versiune a textului sursa",
+      "c) se obtine codul obiect"
+    ],
+    "correct": [
+      "b) se obtine o noua versiune a textului sursa"
+    ]
+  },
+  {
+    "id": 4,
+    "question": "4. In conditiile de mai jos\n#define PI 3.14\nint r;\nvaloarea expresiei\n 2 * PI * r\n este de tip",
+    "ansList": [
+      "a) int",
+      "b) float",
+      "c) double",
+      "d) long"
+    ],
+    "correct": [
+      "c) double"
+    ]
+  },
+  {
+    "id": 5,
+    "question": "5. Daca variabila r este declarata de tipul float, in conditiile definitiilor\n#define PI 3.14\n#define perimetru(raza) 2*PI*raza\nvaloarea expresiei perimetru(r) este de tip",
+    "ansList": [
+      "a) int",
+      "b) float",
+      "c) double",
+      "d) long"
+    ],
+    "correct": [
+      "c) double"
+    ]
+  },
+  {
+    "id": 6,
+    "question": "6. Urmatoarea macrodefinitie\n#define swap(a,b) {a=a^b; b=a^b; a=a^b;}\npoate fi apelata ca swap(x, y);",
+    "ansList": [
+      "a) numai daca x si y sunt variabile de tip real",
+      "b) numai daca x si y sunt variabile de tip intreg",
+      "c) daca x si y sunt constante intregi",
+      "d) indiferent de ce tip numeric sunt variabilele x si y"
+    ],
+    "correct": [
+      "b) numai daca x si y sunt variabile de tip intreg"
+    ]
+  },
+  {
+    "id": 7,
+    "question": "7. Urmatoarea macrodefinitie\n#define swap(a,b) {a=a+b; b=a-b; a=a-b;}\npoate fi apelata ca swap(x, y);",
+    "ansList": [
+      "a) numai daca x si y sunt variabile de tip real",
+      "b)\n numai daca x si y sunt variabile de tip intreg",
+      "c) daca x si y sunt constante intregi",
+      "d) indiferent de ce tip numeric sunt variabilele x si y"
+    ],
+    "correct": [
+      "d) indiferent de ce tip numeric sunt variabilele x si y"
+    ]
+  },
+  {
+    "id": 8,
+    "question": "8. In conditiile\n#define swap(a,b) {int aux; aux=a; a=b; b=aux;}\nfloat x=10.5, y=3.75;\nin urma apelului swap(x, y); valorile lui x, respectiv y vor fi:",
+    "ansList": [
+      "a) x=3.75 si y=10.5",
+      "b) x=3.0 si y=10.5",
+      "c) x=3.75 si y=10.0",
+      "d) x=3.0 si y=10.0"
+    ],
+    "correct": [
+      "c) x=3.75 si y=10.0"
+    ]
+  },
+  {
+    "id": 9,
+    "question": "9. In conditiile\n#define swap(a,b) {int aux; aux=a; a=b; b=aux;}\nfloat x,y;\nin urma apelului swap(x, y); rezultatul (interschimbarea valorilor lui x si y!):",
+    "ansList": [
+      "a) este corect",
+      "b) nu este corect",
+      "c) depinde de valorile lui x si y",
+      "d) depinde doar de valoarea lui x"
+    ],
+    "correct": [
+      "d) depinde doar de valoarea lui x"
+    ]
+  },
+  {
+    "id": 10,
+    "question": "10. Ce este gresit in\n#define cub(x) x*x*x",
+    "ansList": [
+      "a) cu o directiva define nu se pot defini decat constante simbolice",
+      "b) parametrului x nu i s-a declarat tipul",
+      "c) la apeluri de genul cub(a+b) rezultatul nu reprezinta, in general, cubul sumei (a+b)"
+    ],
+    "correct": [
+      "c) la apeluri de genul cub(a+b) rezultatul nu reprezinta, in general, cubul sumei (a+b)"
+    ]
+  },
+  {
+    "id": 11,
+    "question": "11. Care din variante defineste corect si complet ce anume se specifica prin tipul unei date?",
+    "ansList": [
+      "a) Numarul de octeti ocupati",
+      "b) Spatiul necesar reprezentarii si modul de reprezentare.",
+      "c) Operatiile permise"
+    ],
+    "correct": [
+      "b) Spatiul necesar reprezentarii si modul de reprezentare."
+    ]
+  },
+  {
+    "id": 12,
+    "question": "12. Care din urmatoarele cuvinte rezervate denumesc tipuri de date intregi predefinite in C?",
+    "ansList": [
+      "a) char",
+      "b) float",
+      "c) short",
+      "d) int",
+      "e) long",
+      "f) long double"
+    ],
+    "correct": [
+      "a) char",
+      "c) short",
+      "d) int",
+      "e) long"
+    ]
+  },
+  {
+    "id": 13,
+    "question": "13. Cum se numeste modul de reprezentare al datelor reale?",
+    "ansList": [
+      "a) virgula mobila",
+      "b)complement fata de doi",
+      "c) virgula fixa"
+    ],
+    "correct": [
+      "a) virgula mobila"
+    ]
+  },
+  {
+    "id": 14,
+    "question": "14. Ce este o variabila?",
+    "ansList": [
+      "a) litera care tine locul unor valori (de ex. a, b, c sau x, y, z)",
+      "b) o valoare care se schimba",
+      "c) o zona de memorie identificabila in care se pot pastra valori"
+    ],
+    "correct": [
+      "c) o zona de memorie identificabila in care se pot pastra valori"
+    ]
+  },
+  {
+    "id": 15,
+    "question": "15. Ce caracteristica a unei variabile este precizata de clasa sa de memorare?",
+    "ansList": [
+      "a) locul unde poate fi folosita",
+      "b) locul unde se creaza",
+      "c) locul unde se vede"
+    ],
+    "correct": [
+      "b) locul unde se creaza"
+    ]
+  },
+  {
+    "id": 16,
+    "question": "16. Care din urmatoarele clase de memorare se specifica implicit?",
+    "ansList": [
+      "a) static",
+      "b) auto",
+      "c) register",
+      "d) extern"
+    ],
+    "correct": [
+      "a) static",
+      "b) auto"
+    ]
+  },
+  {
+    "id": 17,
+    "question": "17. Ce reprezinta domeniul unei variabile:",
+    "ansList": [
+      "a) plaja de valori pe care le poate lua",
+      "b) locul unde se creaza",
+      "c) locul din textul sursa unde poate fi folosita",
+      "d) daca are semn sau nu"
+    ],
+    "correct": [
+      "c) locul din textul sursa unde poate fi folosita"
+    ]
+  },
+  {
+    "id": 18,
+    "question": "18. Care este atributul care precizeaza unde (intr-un text sursa C) poate fi utilizat legal identificatorul unei variabile?",
+    "ansList": [
+      "a) domeniul",
+      "b) durata de viata",
+      "c) vizibilitatea",
+      "d) clasa de memorare"
+    ],
+    "correct": [
+      "a) domeniul"
+    ]
+  },
+  {
+    "id": 19,
+    "question": "19. Care din urmatoarele cuvinte rezervate denumesc tipuri de date reale predefinite in C?",
+    "ansList": [
+      "a) char",
+      "b) float",
+      "c) short",
+      "d) double",
+      "e) long",
+      "f) long double"
+    ],
+    "correct": [
+      "b) float",
+      "d) double",
+      "f) long double"
+    ]
+  },
+  {
+    "id": 20,
+    "question": "20. Cum se numeste modul de reprezentare al datelor intregi?",
+    "ansList": [
+      "a) virgula mobila",
+      "b) complement fata de doi",
+      "c) virgula fixa"
+    ],
+    "correct": [
+      "b) complement fata de doi"
+    ]
+  },
+  {
+    "id": 21,
+    "question": "21. Care atribut al unei variabile indica locul in care este creata variabila?",
+    "ansList": [
+      "a) domeniul",
+      "b) durata",
+      "c) clasa de memorare",
+      "d) vizibilitatea"
+    ],
+    "correct": [
+      "c) clasa de memorare"
+    ]
+  },
+  {
+    "id": 22,
+    "question": "22. Stiind ca valorile datelor de tip intreg sunt cu semn, care va fi valoarea variabilei c dupa secventa:\nchar c=130;",
+    "ansList": [
+      "a) 130",
+      "b) -126",
+      "c) \u2018\\0\u2019",
+      "d) \u2018c\u2019"
+    ],
+    "correct": [
+      "b) -126"
+    ]
+  },
+  {
+    "id": 23,
+    "question": "23. Declaratia\nregister int i;\n detrmina crearea variabilei i:",
+    "ansList": [
+      "a) intr-un registru",
+      "b) pe stiva",
+      "c) depinde de context",
+      "d) declaratia are ca efect inregistrarea variabilei!"
+    ],
+    "correct": [
+      "c) depinde de context"
+    ]
+  },
+  {
+    "id": 24,
+    "question": "24. Declaratia\n extern int val;\n",
+    "ansList": [
+      "a) este o declaratie de referire",
+      "b) determina crearea variabilei",
+      "c) \"anunta\" tipul variabilei val, declarata altundeva"
+    ],
+    "correct": [
+      "a) este o declaratie de referire",
+      "c) \"anunta\" tipul variabilei val, declarata altundeva"
+    ]
+  },
+  {
+    "id": 25,
+    "question": "25. O declaratie de referire",
+    "ansList": [
+      "a) creaza o variabila",
+      "b) se face cu cuvantul rezervat extern",
+      "c) anunta tipul unei variabile nedeclarate inca in respectivul fisier sursa",
+      "d) precizeaza o referinta (adresa)"
+    ],
+    "correct": [
+      "b) se face cu cuvantul rezervat extern",
+      "c) anunta tipul unei variabile nedeclarate inca in respectivul fisier sursa"
+    ]
+  },
+  {
+    "id": 26,
+    "question": "26. Domeniul identificatorilor de variabile globale tine din locul declaratiei pana la:",
+    "ansList": [
+      "a) sfarsitul blocului",
+      "b) sfarsitul programului",
+      "c) sfarsitul textului sursa",
+      "d) sfarsitul functiei"
+    ],
+    "correct": [
+      "c) sfarsitul textului sursa"
+    ]
+  },
+  {
+    "id": 27,
+    "question": "27. Domeniul identificatorilor de variabile locale tine din locul declaratiei",
+    "ansList": [
+      "a) sfarsitul programului",
+      "b) sfarsitul textului sursa",
+      "c) sfarsitul functiei",
+      "d) sfarsitul blocului"
+    ],
+    "correct": [
+      "d) sfarsitul blocului"
+    ]
+  },
+  {
+    "id": 28,
+    "question": "28. La executarea  programului urmator se tasteaza 20. Ce se va afisa dupa executare ?\n#include <stdio.h>\nvoid main() {\nchar a ;\nscanf(\"%c\", &a);\nprintf(\"%c\", a);\n}",
+    "ansList": [
+      "a) 20",
+      "b) 2",
+      "c) 0"
+    ],
+    "correct": [
+      "b) 2"
+    ]
+  },
+  {
+    "id": 29,
+    "question": "29. Care este durata de viata a variabilelor globale?",
+    "ansList": [
+      "a) cat timp sunt utilizate;",
+      "b) cateva minute;",
+      "c) cat dureaza executia programului;"
+    ],
+    "correct": [
+      "c) cat dureaza executia programului;"
+    ]
+  },
+  {
+    "id": 30,
+    "question": "30.Care este durata de viata a variabilelor locale?",
+    "ansList": [
+      "a) cat timp sunt utilizate;",
+      "b) cateva minute;",
+      "c) cate dureaza executia  subprogramului;",
+      "d) depinde de clasa lor de memorare;"
+    ],
+    "correct": [
+      "d) depinde de clasa lor de memorare;"
+    ]
+  },
+  {
+    "id": 31,
+    "question": "31.Daca se tasteaza caracaterul c ce afiseaza urmatorul program:\n#include <stdio.h>\nvoid main(){\nchar c;\nint k;\nc=getchar(), k=c+257;\nputchar((char)k);\n}",
+    "ansList": [
+      "a) c",
+      "b) b",
+      "c) C",
+      "d) d",
+      "e) 257",
+      "f) 259"
+    ],
+    "correct": [
+      "d) d"
+    ]
+  },
+  {
+    "id": 32,
+    "question": "32. Care este ordinea de evaluare a expresiilor compuse, daca nu se folosesc paranteze?",
+    "ansList": [
+      "a) intotdeauna de la stanga spre dreapta",
+      "b) intotdeauna de la dreapta spre stanga",
+      "c) aleatoare",
+      "d) in functie de precedenta operatorilor"
+    ],
+    "correct": [
+      "d) in functie de precedenta operatorilor"
+    ]
+  },
+  {
+    "id": 33,
+    "question": "33. Cand au loc conversii implicite de tip?",
+    "ansList": [
+      "a) la citrea datelor de intrare si la afisarea rezultatelor",
+      "b) cand operanzii unei expresii au tipuri diferite",
+      "c) cand argumentul actual cu care se apeleaza o functie are alt tip decat argumentul formal corespunzator"
+    ],
+    "correct": [
+      "b) cand operanzii unei expresii au tipuri diferite",
+      "c) cand argumentul actual cu care se apeleaza o functie are alt tip decat argumentul formal corespunzator"
+    ]
+  },
+  {
+    "id": 34,
+    "question": "34. Care din urmatorii operatori NU admit operanzi reali?",
+    "ansList": [
+      "a) operatorii de incrementare/decrementare",
+      "b) operatorii logici",
+      "c) operatorii logici pe biti",
+      "d) operatorii de deplasare"
+    ],
+    "correct": [
+      "c) operatorii logici pe biti",
+      "d) operatorii de deplasare"
+    ]
+  },
+  {
+    "id": 35,
+    "question": "35. Care din urmatorii operatori admit operanzi reali?",
+    "ansList": [
+      "a) operatorii logici pe biti",
+      "b) operatorii de deplasare",
+      "c) operatorii de incrementare/decrementare",
+      "d) operatorii logici"
+    ],
+    "correct": [
+      "c) operatorii de incrementare/decrementare",
+      "d) operatorii logici"
+    ]
+  },
+  {
+    "id": 36,
+    "question": "36. Care este rezultatul numeric al evaluarii unei expresii relationale sau logice?",
+    "ansList": [
+      "a) FALSE sau TRUE",
+      "b) 0 sau 1",
+      "c) 0 sau diferit de 0"
+    ],
+    "correct": [
+      "b) 0 sau 1"
+    ]
+  },
+  {
+    "id": 37,
+    "question": "37. Care din urmatoarele valori sunt adevarate din punct de vedere logic?",
+    "ansList": [
+      "a) \u2018\\0\u2019",
+      "b) 0x80",
+      "c) \u20180\u2019",
+      "d) 280",
+      "e) 0.0",
+      "f) 3.14F"
+    ],
+    "correct": [
+      "b) 0x80",
+      "c) \u20180\u2019",
+      "d) 280",
+      "f) 3.14F"
+    ]
+  },
+  {
+    "id": 38,
+    "question": "38. Care din urmatoarele valori sunt false din punct de vedere logic?",
+    "ansList": [
+      "a) \u2018\\0\u2019",
+      "b) 0x1F",
+      "c) \u20180\u2019",
+      "d) NULL",
+      "e) 0.0",
+      "f) 1F"
+    ],
+    "correct": [
+      "a) \u2018\\0\u2019",
+      "d) NULL",
+      "e) 0.0"
+    ]
+  },
+  {
+    "id": 39,
+    "question": "39. Date declaratiile\nint n=10, m=4;\nfloat x;\nvaloarea expresiei x = 1.5 + n/m este:",
+    "ansList": [
+      "a) 4.0",
+      "b) 3.5",
+      "c) de tip double",
+      "d) de tip float"
+    ],
+    "correct": [
+      "b) 3.5",
+      "c) de tip double"
+    ]
+  },
+  {
+    "id": 40,
+    "question": "40. Date declaratiile\nint n=10, m=4;\nvaloarea expresiei 1.5 + n/m este:",
+    "ansList": [
+      "a) 4",
+      "b) 3.5",
+      "c) de tip double",
+      "d) de tip float"
+    ],
+    "correct": [
+      "b) 3.5",
+      "c) de tip double"
+    ]
+  },
+  {
+    "id": 41,
+    "question": "41. Data declaratia\nfloat x=2.5;\nvaloarea expresiei x=3.0*x + 10/4 este",
+    "ansList": [
+      "a) 10.0",
+      "b) 9.5",
+      "c) de tip double",
+      "d) de tip float"
+    ],
+    "correct": [
+      "b) 9.5",
+      "d) de tip float"
+    ]
+  },
+  {
+    "id": 42,
+    "question": "42. Date declaratiile\nfloat x=2.5;\nvaloarea expresiei 3.0*x + 10/4.0 este:",
+    "ansList": [
+      "a) 10.0",
+      "b) 9.5",
+      "c) de tip double",
+      "d) de tip float"
+    ],
+    "correct": [
+      "a) 10.0",
+      "c) de tip double"
+    ]
+  },
+  {
+    "id": 43,
+    "question": "43. Date declaratiile\nint n=200, m=200;\nlong r;\nsi presupunand ca sizeof(int) este 2 iar valorile tipurile intregi sunt implicit cu semn, valoarea expresiei r=n*m este:",
+    "ansList": [
+      "a) 40000",
+      "b) -25536",
+      "c) de tip long",
+      "d) de tip int"
+    ],
+    "correct": [
+      "b) -25536",
+      "c) de tip long"
+    ]
+  },
+  {
+    "id": 44,
+    "question": "44. Daca a este o variabila intreaga, care este valoarea expresiei(a < 'a') && (a > 'z')",
+    "ansList": [
+      "a) 1",
+      "b) 0",
+      "c) depinde de valoarea lui a"
+    ],
+    "correct": [
+      "b) 0"
+    ]
+  },
+  {
+    "id": 45,
+    "question": "45. Daca a este o variabila intreaga, care este valoarea expresiei\n(a < 'a') || (a > 'z')",
+    "ansList": [
+      "a) 1",
+      "b) 0",
+      "c) depinde de valoarea lui a"
+    ],
+    "correct": [
+      "c) depinde de valoarea lui a"
+    ]
+  },
+  {
+    "id": 46,
+    "question": "46. Date declaratiile:\nint i, t[10];\nvaloarea expresiei\n( i=0 ) && ( t[i]<0 )",
+    "ansList": [
+      "a) este 1",
+      "b) este 0",
+      "c) depinde de valoarea lui t[i]"
+    ],
+    "correct": [
+      "b) este 0"
+    ]
+  },
+  {
+    "id": 47,
+    "question": "47. Date declaratiile:\nstatic int i, t[10];\nsi presupunand ca atat i, cat si t nu sunt initializati explicit, valoarea expresiei\n(i==0) || (t[i]<0)",
+    "ansList": [
+      "a) este 1",
+      "b) este 0",
+      "c) depinde de context"
+    ],
+    "correct": [
+      "a) este 1"
+    ]
+  },
+  {
+    "id": 48,
+    "question": "48. Date declaratiile variabilelor locale:\nint i, t[10];\nsi presupunand ca atat i, cat si t nu sunt initializati explicit, valoarea expresiei\n(i==0) || (t[i]<0)",
+    "ansList": [
+      "a) este 1",
+      "b) este 0",
+      "c) depinde de context"
+    ],
+    "correct": [
+      "c) depinde de context"
+    ]
+  },
+  {
+    "id": 49,
+    "question": "49. Date declaratiile variabilelor locale:\nint i, t[10]={0};\nsi presupunand ca i nu este initializat explicit, valoarea expresiei\n(i==0) || (t[i]==0)",
+    "ansList": [
+      "a) este 1",
+      "b) este 0",
+      "c) depinde de i"
+    ],
+    "correct": [
+      "c) depinde de i",
+      "a) este valoarea returnata de functia getchar",
+      "d) este 0 sau 1"
+    ]
+  },
+  {
+    "id": 50,
+    "question": "50. In conditiile in care variabila c este declarata\nchar c;\nvaloarea expresiei\nc = getchar() != EOF",
+    "ansList": [
+      "a) este valoarea returnata de functia getchar",
+      "b) este 0",
+      "c) este 1",
+      "d) este 0 sau 1"
+    ],
+    "correct": [
+      "d) este 0 sau 1"
+    ]
+  },
+  {
+    "id": 51,
+    "question": "51. Presupunand ca adresele se reprezinta pe 4 octeti, cat spatiu de memorie se rezerva prin urmatoarele declaratii:\nextern long count;\nstruct node {\n long key;\nstruct node *next;\n};",
+    "ansList": [
+      "a) 12 octeti",
+      "b) 8 octeti",
+      "c) 4 octeti",
+      "d) nici un octet"
+    ],
+    "correct": [
+      "d) nici un octet"
+      
+    ]
+  },
+  {
+    "id": 52,
+    "question": "52. Care este rezultatul evaluarii expresiei\n\"0123456789\"[i]\ndaca i=9?",
+    "ansList": [
+      "a) expresia este gresita sintactic",
+      "b) \u20199\u2019",
+      "c) 9",
+      "d) \u20198\u2019"
+    ],
+    "correct": [
+      "b) \u20199\u2019"
+    ]
+  },
+  {
+    "id": 53,
+    "question": "53. Care este rezultatul evaluarii expresiei\n\"0123456789\"[i]\ndaca i=0?",
+    "ansList": [
+      "a) expresia este gresita sintactic",
+      "b) 0",
+      "c) \u20190\u2019",
+      "d) \u2019\\0\u2019"
+    ],
+    "correct": [
+      "c) \u20190\u2019"
+    ]
+  },
+  {
+    "id": 54,
+    "question": "54. Care este rezultatul evaluarii expresiei\n\"0123456789\"[i]\ndaca i=10?",
+    "ansList": [
+      "a) expresia este gresita sintactic",
+      "b) nedefinit",
+      "c) \u2019\\0\u2019",
+      "d) \u20199\u2019"
+    ],
+    "correct": [
+      "c) \u2019\\0\u2019"
+    ]
+  },
+  {
+    "id": 55,
+    "question": "55. Care este rezultatul evaluarii expresiei\n\"0123456789\"[10]",
+    "ansList": [
+      "a) expresia este gresita sintactic",
+      "b) expresia nu are sens",
+      "c) \u20199\u2019",
+      "d) 0"
+    ],
+    "correct": [
+      "b) expresia nu are sens"
+    ]
+  },
+  {
+    "id": 56,
+    "question": "56. Care este rezultatul numeric al evaluarii exprresiei\na < b < c\ndaca a=-2, b=-1 si c=0?",
+    "ansList": [
+      "a) 1",
+      "b) TRUE",
+      "c) 0",
+      "d) FALSE"
+    ],
+    "correct": [
+      "a) 1"
+    ]
+  },
+  {
+    "id": 57,
+    "question": "57. Care este rezultatul numeric al evaluarii exprresiei\na < b < c\ndaca a=0, b=1, c=2?",
+    "ansList": [
+      "a) 1",
+      "b) TRUE",
+      "c) 0",
+      "d) FALSE"
+    ],
+    "correct": [
+      "a) 1"
+    ]
+  },
+  {
+    "id": 58,
+    "question": "58. Daca t este un tablou, ce reprezinta valoarea expresiei\nsizeof(t) / sizeof(t[0])",
+    "ansList": [
+      "a) expresia este gresita sintactic",
+      "b) expresia nu are sens",
+      "c) numarul de elemente ale tabloului t",
+      "d) numarul de octeti ocupati de t respectiv t[0]"
+    ],
+    "correct": [
+      "c) numarul de elemente ale tabloului t"
+    ]
+  },
+  {
+    "id": 59,
+    "question": "59. Presupunanad ca sizeof(int) este 2, valoarea lui c, in urma executiei secventei urmatoare\nint a=100, b=400;\nlong int c;\nc=a*b;",
+    "ansList": [
+      "a) este corecta",
+      "b) este eronata",
+      "c) este 40000",
+      "d) este -25536"
+    ],
+    "correct": [
+      "b) este eronata"
+    ]
+  },
+  {
+    "id": 60,
+    "question": "60. Discutati (in functie de valorile lui a si b) rezultatul lui c dupa:\nint a, c;\nlong b;\nc=a*b;",
+    "ansList": [
+      "a) rezultatul este intotdeauna corect",
+      "b) rezultatul este intotdeauna eronat",
+      "c) rezultatul este corect daca a*b se incadreaza in plaja de valori a tipului int"
+    ],
+    "correct": [
+      "c) rezultatul este corect daca a*b se incadreaza in plaja de valori a tipului int"
+    ]
+  }
 ]

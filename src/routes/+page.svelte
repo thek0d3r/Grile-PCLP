@@ -192,6 +192,7 @@
         font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: 1rem;
+        white-space: pre-line;
     }
   
     .green {
