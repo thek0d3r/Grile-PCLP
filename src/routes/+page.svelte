@@ -91,6 +91,7 @@
         correctAns = 0;
         isCorrect = null;
         selectedAnswer = [];
+        selectedCheckboxValues = {};
         shuffle(flashcards);
     }
   
@@ -122,11 +123,11 @@
         {#if currentCardIndex != flashcards.length}
         <div class="container">
             <div class="flashcard">
-                <div class="question">{flashcards[currentCardIndex].question}</div>
+                <div class="question">{@html flashcards[currentCardIndex].question}</div>
                 {#each flashcards[currentCardIndex].ansList as ans}
                     <div class="form-check" style="display: flex; align-items: center; justify-content: center;">
                         <input class="form-check-input" type="checkbox" id={ans} value={ans} on:change={handleChange} on:keypress={handleKeypress} bind:checked={selectedCheckboxValues[ans]}/>
-                        <label class="form-check-label" style="margin-left: 5px" for={ans}>{ans}</label>
+                        <label class="form-check-label" style="margin-left: 5px" for={ans}>{@html ans}</label>
                     </div>
                 {/each}
             </div>
