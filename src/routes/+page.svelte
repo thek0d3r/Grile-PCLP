@@ -75,8 +75,10 @@
 
         if (selectedAnswer.includes(value)) {
             selectedAnswer = selectedAnswer.filter(ans => ans !== value);
+            selectedCheckboxValues[value] = false;
         } else {
             selectedAnswer = [...selectedAnswer, value];
+            selectedCheckboxValues[value] = true;
         }
     }
   
