@@ -1,5 +1,6 @@
 <script>
-    import flashcards from '$lib/q.json';
+
+    import { onMount } from 'svelte';
 
     let finalMsgBad = [
         "Nu a fost să fie frate! Ce să îi faci? 😐",
@@ -7,13 +8,29 @@
         "De la lag! 🖥️",
         "Nu băga la păcănele perioada asta 🎰"
     ];
-
+    
     let finalMsgGood = [
         "Felicitări! Le-ai nimerit! 👏",
         "Ne vedem în semestrul următor 🎓",
         "Ai prins comp-ul bun 🖥️",
         "Poți să bagi liniștit la păcănele 🎰"
     ];
+
+    let flashcards = [];
+    
+    onMount(async () => {
+        try {
+            const jsonData = await import('$lib/q.json');
+            flashcards = jsonData.default;
+            flashcards = shuffle(flashcards);
+        } catch (error) {
+            console.error('Error importing JSON:', error);
+        }
+    });
+
+    $: if (flashcards && flashcards.length > 0) {
+        flashcards = shuffle(flashcards);
+    }
 
     let currentCardIndex = 0;
     let isCorrect = null;
@@ -22,32 +39,15 @@
     let correctAns = 0;
     let grade = 0;
 
-    shuffle(flashcards);
-  
     function nextCard() {
         isCorrect = null;
         currentCardIndex += 1;
         selectedAnswer = [];
         selectedCheckboxValues = {};
     }
-
-    function shuffle(array) {
-        let currentIndex = array.length,  randomIndex;
-
-        while (currentIndex > 0) {
-
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex--;
-
-            [array[currentIndex], array[randomIndex]] = [
-            array[randomIndex], array[currentIndex]];
-        }
-
-        return array;
-    }
   
     function validateAnswer() {
-        if (selectedAnswer == []) return;
+        if (selectedAnswer.length === 0) return;
 
         const currentCard = flashcards[currentCardIndex];
         isCorrect = arraysEqual(selectedAnswer, currentCard.correct);
@@ -59,6 +59,26 @@
         }, 500);
     }
 
+    function shuffle(array) {
+        console.log(array[0]);
+        let currentIndex = array.length, randomIndex;
+
+        // While there remain elements to shuffle.
+        while (currentIndex > 0) {
+
+            // Pick a remaining element.
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+
+            // And swap it with the current element.
+            [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+        }
+
+        console.log(array[0]);
+
+        return array;
+    }
 
     function arraysEqual(arr1, arr2) {
         if (arr1.length !== arr2.length) return false;
@@ -94,7 +114,6 @@
         isCorrect = null;
         selectedAnswer = [];
         selectedCheckboxValues = {};
-        shuffle(flashcards);
     }
   
     $: progressPercentage = ((currentCardIndex) / flashcards.length) * 100;
@@ -124,14 +143,16 @@
     <div class="row">
         {#if currentCardIndex != flashcards.length}
         <div class="container">
-            <div class="flashcard">
-                <div class="question">{@html flashcards[currentCardIndex].question}</div>
-                {#each flashcards[currentCardIndex].ansList as ans}
-                    <div class="form-check" style="display: flex; align-items: center; justify-content: center;">
-                        <input class="form-check-input" type="checkbox" id={ans} value={ans} on:change={handleChange} on:keypress={handleKeypress} bind:checked={selectedCheckboxValues[ans]}/>
-                        <label class="form-check-label" style="margin-left: 5px" for={ans}>{@html ans}</label>
-                    </div>
-                {/each}
+            <div class="flashcard col-xl-6 offset-xl-3">
+                <div class="col-xl-6 offset-xl-3">
+                    <div class="question">{flashcards[currentCardIndex].question}</div>
+                    {#each flashcards[currentCardIndex].ansList as ans}
+                        <div class="form-check" style="display: flex; align-items: center; justify-content: center;">
+                            <input class="form-check-input" type="checkbox" id={ans} value={ans} on:change={handleChange} on:keypress={handleKeypress} bind:checked={selectedCheckboxValues[ans]}/>
+                            <label class="form-check-label" style="margin-left: 5px" for={ans}>{@html ans}</label>
+                        </div>
+                    {/each}
+                </div>
             </div>
         </div>
     
