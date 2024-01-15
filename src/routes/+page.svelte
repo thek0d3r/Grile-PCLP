@@ -121,7 +121,7 @@
   
   <main class="container-fluid" style="position: relative; width: 100vw; height: 100vh">
     <div class="row">
-        <h1>Examen grila de antrenament PCLP</h1>
+        <h1>Examen grilă de antrenament PCLP</h1>
     </div>
   
     <br />
@@ -167,7 +167,7 @@
             {/if}
     
             <div class="disclaimer">
-                <p>NOTE: Skipping a question will render the answer incorrect! So, don't skip them! Take your time 🙂</p>
+                <p>P.S. Dacă sari peste o întrebare, se consideră că ai răspuns greșit! Așa că nu le ocoli! Relaxează-te și ia-ți timpul necesar, nu e grabă 🙂</p>
             </div>
             {:else}
                 <div class="row">
@@ -205,8 +205,11 @@
   </main>
   
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
     main {
         text-align: center;
+        font-family: 'Open Sans', sans-serif;
     }
   
     .flashcard {
