@@ -138,66 +138,70 @@
   
     <br />
 
-    <div class="row">
-        {#if currentCardIndex != 60}
-        <div class="container">
-            <div class="flashcard col-xl-6 offset-xl-3">
-                <div class="col-xl-6 offset-xl-3">
-                    <div class="question">{flashcards[currentCardIndex].question}</div>
-                    {#each flashcards[currentCardIndex].ansList as ans}
-                        <div class="form-check" style="display: flex; align-items: center; justify-content: center;">
-                            <input class="form-check-input" type="checkbox" id={ans} value={ans} on:change={handleChange} on:keypress={handleKeypress} bind:checked={selectedCheckboxValues[ans]}/>
-                            <label class="form-check-label" style="margin-left: 5px" for={ans}>{@html ans}</label>
-                        </div>
-                    {/each}
+    {#if flashcards.length > 0}
+        <div class="row">
+            {#if currentCardIndex != 60}
+            <div class="container">
+                <div class="flashcard col-xl-6 offset-xl-3">
+                    <div class="col-xl-6 offset-xl-3">
+                        <div class="question">{flashcards[currentCardIndex].question}</div>
+                        {#each flashcards[currentCardIndex].ansList as ans}
+                            <div class="form-check" style="display: flex; align-items: center; justify-content: center;">
+                                <input class="form-check-input" type="checkbox" id={ans} value={ans} on:change={handleChange} on:keypress={handleKeypress} bind:checked={selectedCheckboxValues[ans]}/>
+                                <label class="form-check-label" style="margin-left: 5px" for={ans}>{@html ans}</label>
+                            </div>
+                        {/each}
+                    </div>
                 </div>
             </div>
-        </div>
+        
+            <div class="controls">
+                <button type="button" class="btn btn-outline-primary" on:click={validateAnswer}>Trimite</button>
+                <button type="button" class="btn btn-outline-danger" on:click={nextCard}>Sari peste</button>
+            </div>
+
+            {#if isCorrect === true}
+                <p class="result correct">Correct!</p>
+            {:else if isCorrect === false}
+                <p class="result incorrect">Incorrect!</p>
+            {/if}
     
-        <div class="controls">
-            <button type="button" class="btn btn-outline-primary" on:click={validateAnswer}>Trimite</button>
-            <button type="button" class="btn btn-outline-danger" on:click={nextCard}>Sari peste</button>
-        </div>
-
-        {#if isCorrect === true}
-            <p class="result correct">Correct!</p>
-        {:else if isCorrect === false}
-            <p class="result incorrect">Incorrect!</p>
-        {/if}
-  
-        <div class="disclaimer">
-            <p>NOTE: Skipping a question will render the answer incorrect! So, don't skip them! Take your time 🙂</p>
-        </div>
-        {:else}
-            <div class="row">
-                <div class="title">
-                    <h1>Finished!</h1>
-                </div>    
+            <div class="disclaimer">
+                <p>NOTE: Skipping a question will render the answer incorrect! So, don't skip them! Take your time 🙂</p>
             </div>
-
-            <div class="row">
-                <h3 class:red={grade < 5} class:green={grade >= 5}>Nota: {(correctAns * 10 / flashcards.length).toFixed(2)}</h3>
-                <p>Correct: {correctAns}</p>
-                <p>Total: {flashcards.length}</p>
-            </div>
-
-            {#if grade < 5}
-                <div class="row">
-                    <p class="final-msg">{finalMsgBad[Math.floor(Math.random() * 3)]}</p>
-                </div>
             {:else}
                 <div class="row">
-                    <p class="final-msg">{finalMsgGood[Math.floor(Math.random() * 3)]}</p>
+                    <div class="title">
+                        <h1>Finished!</h1>
+                    </div>    
+                </div>
+
+                <div class="row">
+                    <h3 class:red={grade < 5} class:green={grade >= 5}>Nota: {(correctAns * 10 / flashcards.length).toFixed(2)}</h3>
+                    <p>Correct: {correctAns}</p>
+                    <p>Total: {flashcards.length}</p>
+                </div>
+
+                {#if grade < 5}
+                    <div class="row">
+                        <p class="final-msg">{finalMsgBad[Math.floor(Math.random() * 3)]}</p>
+                    </div>
+                {:else}
+                    <div class="row">
+                        <p class="final-msg">{finalMsgGood[Math.floor(Math.random() * 3)]}</p>
+                    </div>
+                {/if}
+
+                <div class="row">
+                    <div class="container">
+                        <button type="button" on:click={restart} class="btn btn-outline-info">Restart</button>
+                    </div>
                 </div>
             {/if}
-
-            <div class="row">
-                <div class="container">
-                    <button type="button" on:click={restart} class="btn btn-outline-info">Restart</button>
-                </div>
-            </div>
-        {/if}
-    </div>
+        </div>
+    {:else}
+        <p>Loading questions...</p>
+    {/if}
   </main>
   
   <style>
