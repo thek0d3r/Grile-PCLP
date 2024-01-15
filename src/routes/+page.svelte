@@ -207,7 +207,7 @@
             {/if}
         </div>
     {:else}
-        <p>Loading questions...</p>
+        <p>Se incarcă întrebările...</p>
     {/if}
   </main>
   
