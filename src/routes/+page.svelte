@@ -117,8 +117,8 @@
         shuffle(flashcards);
     }
   
-    $: progressPercentage = ((currentCardIndex) / flashcards.length) * 100;
-    $: grade = (correctAns * 10 / flashcards.length).toFixed(2);
+    $: progressPercentage = ((currentCardIndex) / 60) * 100;
+    $: grade = (correctAns * 10 / 60).toFixed(2);
 
   </script>
   
@@ -142,7 +142,7 @@
     <br />
 
     <div class="row">
-        {#if currentCardIndex != flashcards.length}
+        {#if currentCardIndex != 60}
         <div class="container">
             <div class="flashcard col-xl-6 offset-xl-3">
                 <div class="col-xl-6 offset-xl-3">
