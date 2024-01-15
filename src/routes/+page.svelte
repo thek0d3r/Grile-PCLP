@@ -114,6 +114,7 @@
         isCorrect = null;
         selectedAnswer = [];
         selectedCheckboxValues = {};
+        shuffle(flashcards);
     }
   
     $: progressPercentage = ((currentCardIndex) / flashcards.length) * 100;
