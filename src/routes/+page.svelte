@@ -39,14 +39,21 @@
     let correctAns = 0;
     let grade = 0;
 
+    let submitButton;
+    let skipButton;
+
     function nextCard() {
         isCorrect = null;
         currentCardIndex += 1;
         selectedAnswer = [];
         selectedCheckboxValues = {};
+
+        skipButton.blur();
     }
   
     function validateAnswer() {
+        submitButton.blur();
+        
         if (selectedAnswer.length === 0) return;
 
         const currentCard = flashcards[currentCardIndex];
@@ -156,8 +163,8 @@
             </div>
         
             <div class="controls">
-                <button type="button" class="btn btn-outline-primary" on:click={validateAnswer}>Trimite</button>
-                <button type="button" class="btn btn-outline-danger" on:click={nextCard}>Sari peste</button>
+                <button type="button" class="btn btn-outline-primary" on:click={validateAnswer} bind:this={submitButton}>Trimite</button>
+                <button type="button" class="btn btn-outline-danger" on:click={nextCard} bind:this={skipButton}>Sari peste</button>
             </div>
 
             {#if isCorrect === true}
