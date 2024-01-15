@@ -274,13 +274,13 @@
     "id": 21,
     "question": "Care este rezultatul corect pentru secvența de program:\nint main()\n{\n    int a = 425;\n    int b = ++a / 10;\n    printf(\"%d\", b);\n    return 0;\n}",
     "ansList": [
-        "a) 3",
-        "b) 2",
-        "c) 6",
+        "a) 43",
+        "b) 42",
+        "c) 46",
         "d) Eroare la sintaxa"
     ],
     "correct": [
-        "d) Eroare la sintaxa"
+        "b) 42"
     ]
   },
 
@@ -355,7 +355,7 @@
     "ansList": [
       "a) detectarea erorilor in faza de integrare",
       "b) detectarea erorilor in faza de proiectoare",
-      "c) imposibilitatea detectarii eroriloe"
+      "c) imposibilitatea detectarii erorilor"
     ],
     "correct": [
         "a) detectarea erorilor in faza de integrare"
@@ -432,11 +432,11 @@
 
   {
     "id": 33,
-    "question": "Care este varianta corecta de alocare dinamica pentru tabloul bidimensional din secventa de mai jos:\nint *mat;\nmat = (int*)malloc(3 * 4 * sizeof(int));\nfor (i = 0; i < 3; i++)\n{\n    for (j = 0; j < 4; j++)\n    {\n        mat[i * 4 + j] = 1;\n        printf(\"%d\", mat[i * 4 + j]);\n    }\n}",
+    "question": "Care este varianta corecta de alocare dinamica pentru tabloul bidimensional din secventa de mai jos:\nint *mat;\n// secventa\nfor (i = 0; i < 3; i++)\n{\n    for (j = 0; j < 4; j++)\n    {\n        mat[i * 4 + j] = 1;\n        printf(\"%d\", mat[i * 4 + j]);\n    }\n}",
     "ansList": [
-        "a) mat = (int*)malloc(3,4)",
-        "b) mat = (int*)malloc(3*4*sizeof(int))",
-        "c) mat = malloc(3*4*sizeof(int))"
+        "a) mat = (int*)malloc(3,4);",
+        "b) mat = (int*)malloc(3*4*sizeof(int));",
+        "c) mat = malloc(3*4*sizeof(int));"
     ],
     "correct": [
         "b) mat = (int*)malloc(3*4*sizeof(int))"
@@ -758,7 +758,7 @@
 
   {
     "id": 58,
-    "question": "Ce va afisa urmatorul program?\n#include <stdio.h>\nint main()\n{\nint c=1;\nwhile(c++<=10)\n\tprintf(\"%d\", c++);\nreturn 0;\n}",
+    "question": "Ce va afisa urmatorul program?\n#include <stdio.h>\nint main()\n{\nint c=1;\nwhile(c++<=10)\n\tprintf(\"%d \", c++);\nreturn 0;\n}",
     "ansList": [
         "1) 3 6 9 12",
         "2) 12",
@@ -810,7 +810,7 @@
 
   {
     "id": 62,
-    "question": "Ce va afisa urmatoarea secventa de cod?\nint main()\n{\nint i;\nfor(i=1;i<=6;i++)\n{if(iMOD3==0)break;\nprintf(\"%d\",i);\n}\nreturn0;\n}",
+    "question": "Ce va afisa urmatoarea secventa de cod?\nint main()\n{\nint i;\nfor(i=1;i<=6;i++)\n{if(i%3==0)break;\nprintf(\"%d\",i);\n}\nreturn0;\n}",
     "ansList": [
         "1) 1 2",
         "2) 1 2 4 5",
@@ -875,7 +875,7 @@
 
   {
     "id": 67,
-    "question": "Ce va afisa programul urmator:\ntypedef struct\n{int numar;\nchar nume[50];\n} curs;\nint main()\n{\ncurs c[]={{1,\"Limbajul c#\"}, {2, \"Limbajul c++\"}, {3,\"Limbajul c\"}};\nprintf(\"%d\", c[1].numar);\nprintf(\"%s\", ((c+1)->nume));\nreturn 0;\n}",
+    "question": "Ce va afisa programul urmator:\ntypedef struct\n{\nint numar;\nchar nume[50];\n} curs;\nint main()\n{\ncurs c[]={{1,\"Limbajul c#\"}, {2, \"Limbajul c++\"}, {3,\"Limbajul c\"}};\nprintf(\"%d\", c[1].numar);\nprintf(\"%s\", ((c+1)->nume));\nreturn 0;\n}",
     "ansList": [
         "1) 2Limbajul c++",
         "2) 1limbajul c#",
@@ -888,7 +888,7 @@
 
   {
     "id": 68,
-    "question": "Secventa de program\nint func(int x){x=10;}\nint main()\n{int y=20;\nfunc(y);\nprintf(\"%d\", y);\nreturn 0;\n}\n va afisa:",
+    "question": "Secventa de program\nint func(int x){\nx=10;\n}\nint main()\n{\nint y=20;\nfunc(y);\nprintf(\"%d\", y);\nreturn 0;\n}\n va afisa:",
     "ansList": [
         "1)eroare la executie",
         "2)10",
