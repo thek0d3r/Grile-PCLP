@@ -42,7 +42,6 @@
     let selectedCheckboxValues = {};
     let correctAns = 0;
     let grade = 0;
-    let progressPercentage = 0;
 
     let submitButton;
     let skipButton;
