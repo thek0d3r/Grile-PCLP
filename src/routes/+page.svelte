@@ -1,4 +1,8 @@
 <script>
+  import Flashcard from './Flashcard.svelte';
+
+  import ProgressBar from './ProgressBar.svelte';
+
 
     import { onMount } from 'svelte';
 
@@ -126,7 +130,7 @@
 
   </script>
   
-  <main class="container-fluid" style="position: relative; width: 100vw; height: 100vh">
+  <main class="container-fluid" style="position: relative; width: 100vw; min-height: 100vh;">
     <div class="row">
         <h1>Examen grilă de antrenament PCLP</h1>
     </div>
@@ -137,9 +141,7 @@
 
     <div class="row">
         <div class="container">
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: {progressPercentage}%;" aria-valuenow="{progressPercentage}" aria-valuemin="0" aria-valuemax="100">{Math.floor(progressPercentage)}%</div>
-            </div>
+            <ProgressBar progressPercentage={progressPercentage}></ProgressBar>
         </div>
     </div>
   
@@ -149,17 +151,12 @@
         <div class="row">
             {#if currentCardIndex != 60}
             <div class="container">
-                <div class="flashcard col-xl-6 offset-xl-3">
-                    <div class="col-xl-6 offset-xl-3">
-                        <div class="question">{flashcards[currentCardIndex].question}</div>
-                        {#each flashcards[currentCardIndex].ansList as ans}
-                            <div class="form-check" style="display: flex; align-items: center; justify-content: center;">
-                                <input class="form-check-input" type="checkbox" id={ans} value={ans} on:change={handleChange} on:keypress={handleKeypress} bind:checked={selectedCheckboxValues[ans]}/>
-                                <label class="form-check-label" style="margin-left: 5px" for={ans}>{@html ans}</label>
-                            </div>
-                        {/each}
-                    </div>
-                </div>
+                <Flashcard 
+                    flashcards={flashcards} 
+                    currentCardIndex={currentCardIndex} 
+                    selectedCheckboxValues={selectedCheckboxValues} 
+                    handleChange={handleChange} 
+                    handleKeypress={handleKeypress}></Flashcard>
             </div>
         
             <div class="controls">
@@ -209,74 +206,4 @@
     {:else}
         <p>Se incarcă întrebările...</p>
     {/if}
-  </main>
-  
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-    main {
-        text-align: center;
-        font-family: 'Open Sans', sans-serif;
-    }
-  
-    .flashcard {
-        border: 1px solid #ccc;
-        background-color: #f9f9f9;
-    }
-  
-    .question {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-        white-space: pre-line;
-    }
-  
-    .green {
-        color: green;
-    }
-
-    .red {
-        color: red;
-    }
-
-    .user-answer {
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-    }
-  
-    .result {
-        margin-top: 1rem;
-        font-weight: bold;
-    }
-  
-    .correct {
-        color: green;
-    }
-  
-    .incorrect {
-        color: red;
-    }
-  
-    .controls {
-        margin-top: 1rem;
-    }
-  
-    .disclaimer {
-        text-align: center;
-        font-size: 12px;
-
-        position: absolute;
-        bottom: 5px;
-    }
-
-    .title {
-        text-align: center;
-        font-size: large;
-    }
-
-    .final-msg {
-        font-size: large;
-    }
-  </style>
-  
+</main>
