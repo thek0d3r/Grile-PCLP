@@ -154,7 +154,8 @@
                     currentCardIndex={currentCardIndex} 
                     selectedCheckboxValues={selectedCheckboxValues} 
                     handleChange={handleChange} 
-                    handleKeypress={handleKeypress}></Flashcard>
+                    handleKeypress={handleKeypress}>
+                </Flashcard>
             </div>
         
             <div class="controls">
