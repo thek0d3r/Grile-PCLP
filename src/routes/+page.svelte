@@ -1,8 +1,6 @@
 <script>
-  import Flashcard from './Flashcard.svelte';
-
-  import ProgressBar from './ProgressBar.svelte';
-
+    import Flashcard from './Flashcard.svelte';
+    import ProgressBar from './ProgressBar.svelte';
 
     import { onMount } from 'svelte';
 
