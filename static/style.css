@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+main {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flashcard {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.question {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    white-space: pre-line;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.user-answer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.result {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.controls {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.disclaimer {
+    position: absolute;
+    bottom: 5px;
+    transform: translate(0, 5px);
+    text-align: center;
+    font-size: 12px;
+    width: 100vw;
+    background-color: #202020;
+    color: #ffffff;
+}
+
+.disclaimer p {
+    position: relative;
+    top: 50%;
+    transform: translate(0, 50%);
+}
+
+.title {
+    text-align: center;
+    font-size: large;
+}
+
+.final-msg {
+    font-size: large;
+}
