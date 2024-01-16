@@ -3,13 +3,13 @@
     "id": 1,
     "question": "Executia unui program se face din?",
     "ansList": [
-      "a) memorie externa",
-      "b) procesor",
-      "c) memorie interna",
-      "d) carnat"
+      "1) memorie externa",
+      "2) procesor",
+      "3) memorie interna",
+      "4) carnat"
     ],
     "correct": [
-      "c) memorie interna"
+      "3) memorie interna"
     ]
   },
 
@@ -17,13 +17,13 @@
     "id": 2,
     "question": "Ce valoare are variabila x din int x = 7^2?",
     "ansList": [
-      "a) 14",
-      "b) 5",
-      "c) eroare",
-      "d) 49"
+      "1) 14",
+      "2) 5",
+      "3) eroare",
+      "4) 49"
     ],
     "correct": [
-      "b) 5"
+      "2) 5"
     ]
   },
 
@@ -31,12 +31,12 @@
     "id": 3,
     "question": "Modulul grafic este utilizat:",
     "ansList": [
-      "a) pt afisarea desenelor si eventual a unui text",
-      "b) pt afisarea caracterelor",
-      "c) pt afisarea desenelor si caracterelor"
+      "1) pt afisarea desenelor si eventual a unui text",
+      "2) pt afisarea caracterelor",
+      "3) pt afisarea desenelor si caracterelor"
     ],
     "correct": [
-      "a) pt afisarea desenelor si eventual a unui text"
+      "1) pt afisarea desenelor si eventual a unui text"
     ]
   },
 
@@ -44,13 +44,13 @@
     "id": 4,
     "question": "Pt declaratia int tab[100] care este rezultatul atribuirii tab[55] = 100?",
     "ansList": [
-      "a) Valoarea de la elementul 55 este 100",
-      "b) Valoarea de la elementul 100 este 55",
-      "c) Eroare",
-      "d) Se scrie 100 peste caracterul de la tab[54]"
+      "1) Valoarea de la elementul 55 este 100",
+      "2) Valoarea de la elementul 100 este 55",
+      "3) Eroare",
+      "4) Se scrie 100 peste caracterul de la tab[54]"
     ],
     "correct": [
-    "d) Se scrie 100 peste caracterul de la tab[54]"
+      "1) Valoarea de la elementul 55 este 100"
     ]
   },
 
@@ -58,12 +58,12 @@
     "id": 5,
     "question": "Care este efectul secventei:\nint n, i;\nprintf('Valoarea lui n:')\nscanf('%d', &n);\nfor(i = 0 ; i < n ; i++)\n{\nprintf('%d', i);\n}",
     "ansList": [
-      "a) valoarea finala este n",
-      "b) se afiseaza valori de la 0 la n-1",
-      "c) se afiseaza pe linie noua valoarea n-1"
+      "1) valoarea finala este n",
+      "2) se afiseaza valori de la 0 la n-1",
+      "3) se afiseaza pe linie noua valoarea n-1"
     ],
     "correct": [
-      "b) se afiseaza valori de la 0 la n-1"
+      "2) se afiseaza valori de la 0 la n-1"
     ]
   },  
 
@@ -71,13 +71,13 @@
     "id": 6,
     "question": "Ce este gresit in urmatoarea secventa?\nchar *sir;\nstrcpy(sir, \"Sesiune\");",
     "ansList": [
-        "a) Totul este bine",
-        "b) Nu exista functia strcpy",
-        "c) Pointer ul nu este initializat",
-        "d) Sesiunea nu ar trebui sa fie acolo"
+      "1) Totul este bine",
+      "2) Nu exista functia strcpy",
+      "3) Pointer ul nu este initializat",
+      "4) Sesiunea nu ar trebui sa fie acolo"
     ],
     "correct": [
-        "c) Pointer ul nu este initializat"
+      "3) Pointer ul nu este initializat"
     ]
   },
 
@@ -85,13 +85,13 @@
     "id": 7,
     "question": "Valoarea zecimalei a constatei hexazecimale 0x88 este?",
     "ansList": [
-      "a) 567",
-      "b) 88",
-      "c) 200",
-      "d) 136"
+      "1) 567",
+      "2) 88",
+      "3) 200",
+      "4) 136"
     ],
     "correct": [
-        "d) 136"
+      "4) 136"
     ]
   },
 
@@ -99,12 +99,12 @@
     "id": 8,
     "question": "World Wide Web este:",
     "ansList": [
-      "a) Un joc video",
-      "b) O retea de informatii",
-      "c) Infrastructura fizica"
+      "1) Un joc video",
+      "2) O retea de informatii",
+      "3) Infrastructura fizica"
     ],
     "correct": [
-        "b) O retea de informatii"
+      "2) O retea de informatii"
     ]
   },
 
@@ -112,12 +112,12 @@
     "id": 9,
     "question": "Apelul care implica functia standard qsort:\nqsort(t, i, sizeof(int), (cmPtr)cmp)?",
     "ansList": [
-      "a) E corect",
-      "b) Sizeof(int) e gresit",
-      "c) Functia cmp e gresita"
+      "1) E corect",
+      "2) Sizeof(int) e gresit",
+      "3) Functia cmp e gresita"
     ],
     "correct": [
-        "b) Sizeof(int) e gresit"
+      "2) Sizeof(int) e gresit"
     ]
   },
 
@@ -125,13 +125,13 @@
     "id": 10,
     "question": "Care din urmatoarele clase de memorare se specifica implicit?",
     "ansList": [
-        "a) register",
-        "b) extern",
-        "c) auto",
-        "d) intern"
+      "1) register",
+      "2) extern",
+      "3) auto",
+      "4) intern"
     ],
     "correct": [
-      "c) auto"
+      "3) auto"
     ]
   },
 
@@ -139,13 +139,13 @@
     "id": 11,
     "question": "Pentru\nint n = 12, m = 5;\nfloat x;\nvaloarea expresiei x = 1.5 + n/m este:",
     "ansList": [
-        "a) n/m e o eroare",
-        "b) 3.9",
-        "c) 3.5",
-        "d) 4"
+      "1) n/m e o eroare",
+      "2) 3.9",
+      "3) 3.5",
+      "4) 4"
     ],
     "correct": [
-        "c) 3.5"
+      "3) 3.5"
     ]
   },
 
@@ -153,12 +153,12 @@
     "id": 12,
     "question": "Secventa\nchar c = 'c';\nconst char *ptr = &c;\n*ptr = 'a';\neste",
     "ansList": [
-        "a) Corecta",
-        "b) eronata pt ca se modifica o valoare constanta",
-        "c) eronata pt ca se modifica un pointer constant"
+      "1) Corecta",
+      "2) eronata pt ca se modifica o valoare constanta",
+      "3) eronata pt ca se modifica un pointer constant"
     ],
     "correct": [
-        "b) eronata pt ca se modifica o valoare constanta"
+      "2) eronata pt ca se modifica o valoare constanta"
     ]
   },
 
@@ -166,12 +166,12 @@
     "id": 13,
     "question": "O functie modifica o variabile in functia care a apelat-o daca:",
     "ansList": [
-      "a) in apelul fct se va preciza adresa variabilei a carei valoare va fi modificat si...",
-      "b) in definitia functiei se va preciza adresa variabilei a carei valoare va fi modificat si...",
-      "c) in declaratia functiei se va preciza adresa variabilei a carei valoare va fi modificat si..."
+      "1) in apelul fct se va preciza adresa variabilei a carei valoare va fi modificat si...",
+      "2) in definitia functiei se va preciza adresa variabilei a carei valoare va fi modificat si...",
+      "3) in declaratia functiei se va preciza adresa variabilei a carei valoare va fi modificat si..."
     ],
     "correct": [
-        "a) in apelul fct se va preciza adresa variabilei a carei valoare va fi modificat si..."
+      "1) in apelul fct se va preciza adresa variabilei a carei valoare va fi modificat si..."
     ]
   },
 
@@ -179,13 +179,13 @@
     "id": 14,
     "question": "Un calculator de proces",
     "ansList": [
-      "a) Proces verbal",
-      "b) calculeaza un proces",
-      "c) descrie procese technologice",
-      "d) este folosit pt a controla un proces"
+      "1) Proces verbal",
+      "2) calculeaza un proces",
+      "3) descrie procese technologice",
+      "4) este folosit pt a controla un proces"
     ],
     "correct": [
-        "d) este folosit pt a controla un proces"
+      "4) este folosit pt a controla un proces"
     ]
   },
 
@@ -193,13 +193,13 @@
     "id": 15,
     "question": "typedef enum{calciu, magneziu, sodiu, potasiu, zinc}minerale;\ncare este intregul asociat elementului \"sodiu\"?",
     "ansList": [
-      "a) 1",
-      "b) 2",
-      "c) 0",
-      "d) 11"
+      "1) 1",
+      "2) 2",
+      "3) 0",
+      "4) 11"
     ],
     "correct": [
-        "b) 2"
+      "2) 2"
     ]
   },
 
@@ -207,13 +207,13 @@
     "id": 16,
     "question": "Ce va afișa secvența:\nint tab[] = {1, 12, 0x61};\nint *p;\np = tab + 2;\nprintf(\"%c\", *p);",
     "ansList": [
-        "a) 0x63",
-        "b) Simbolul corespunzător codului ASCII cu valoarea 97",
-        "c) Eroare",
-        "d) 61"
+      "1) 0x63",
+      "2) Simbolul corespunzător codului ASCII cu valoarea 97",
+      "3) Eroare",
+      "4) 61"
     ],
     "correct": [
-        "b) Simbolul corespunzător codului ASCII cu valoarea 97"
+      "2) Simbolul corespunzător codului ASCII cu valoarea 97"
     ]
   },
 
@@ -221,12 +221,12 @@
     "id": 17,
     "question": "Instructiunea DO...WHILE este:",
     "ansList": [
-      "a) fara test",
-      "b) test final",
-      "c) test initial"
+      "1) fara test",
+      "2) test final",
+      "3) test initial"
     ],
     "correct": [
-        "b) test final"
+      "2) test final"
     ]
   },
 
@@ -234,13 +234,13 @@
     "id": 18,
     "question": "In C, declararea unui tablou de functii",
     "ansList": [
-      "a) este permisa",
-      "b) nu este permisa",
-      "c) permisa cu restrictii",
-      "d) ce e aia ?"
+      "1) este permisa",
+      "2) nu este permisa",
+      "3) permisa cu restrictii",
+      "4) ce e aia ?"
     ],
     "correct": [
-        "b) nu este permisa"
+      "2) nu este permisa"
     ]
   },
 
@@ -248,12 +248,12 @@
     "id": 19,
     "question": "Care este rezultatul programului următor:\n#include <stdio.h>\nint func(int x, int y)\n{\n    return x + y;\n}\nint main()\n{\n    int result1, result2;\n    int(*ptrFunc)(int, int);\n    ptrFunc = func;\n    result1 = (*ptrFunc)(10, 20);\n    result2 = ptrFunc(10, 20);\n    printf(\"Rezultat1 = %d Rezultat2 = %d\", result1, result2);\n    return 0;\n}",
     "ansList": [
-        "a) Eroare",
-        "b) Result 1= 20 ; Result 2=50",
-        "c) Result 1= 30 ; Result 2=30"
+      "1) Eroare",
+      "2) Result 1= 20 ; Result 2=50",
+      "3) Result 1= 30 ; Result 2=30"
     ],
     "correct": [
-        "c) Result 1= 30 ; Result 2=30"
+      "3) Result 1= 30 ; Result 2=30"
     ]
   },
 
@@ -261,12 +261,12 @@
     "id": 20,
     "question": "Ce facilitati ofera un mediu de programare?",
     "ansList": [
-      "a) facilitati de scriere, compilare si depanare a programelor",
-      "b) viteza de calcul sporita",
-      "c) gestioneaza memoria calculatorului"
+      "1) facilitati de scriere, compilare si depanare a programelor",
+      "2) viteza de calcul sporita",
+      "3) gestioneaza memoria calculatorului"
     ],
     "correct": [
-        "a) facilitati de scriere, compilare si depanare a programelor"
+      "1) facilitati de scriere, compilare si depanare a programelor"
     ]
   },
 
@@ -274,13 +274,13 @@
     "id": 21,
     "question": "Care este rezultatul corect pentru secvența de program:\nint main()\n{\n    int a = 425;\n    int b = ++a / 10;\n    printf(\"%d\", b);\n    return 0;\n}",
     "ansList": [
-        "a) 43",
-        "b) 42",
-        "c) 46",
-        "d) Eroare la sintaxa"
+      "1) 43",
+      "2) 42",
+      "3) 46",
+      "4) Eroare la sintaxa"
     ],
     "correct": [
-        "b) 42"
+      "2) 42"
     ]
   },
 
@@ -288,12 +288,12 @@
     "id": 22,
     "question": "Ce afișează următoarea secvență de program:\nint const x = 16;\nprintf(\"%d\", ++x);",
     "ansList": [
-        "a) 17",
-        "b) 16",
-        "c) eroare la compilare"
+      "1) 17",
+      "2) 16",
+      "3) eroare la compilare"
     ],
     "correct": [
-        "c) eroare la compilare"
+      "3) eroare la compilare"
     ]
   },
 
@@ -301,12 +301,12 @@
     "id": 23,
     "question": "Tipurile statice sunt(structurate):",
     "ansList": [
-      "a) structura, pointere, sir de caractere, tablou",
-      "b) structura, tablou, sir de caractere",
-      "c) structura, pointer, caracter"
+      "1) structura, pointere, sir de caractere, tablou",
+      "2) structura, tablou, sir de caractere",
+      "3) structura, pointer, caracter"
     ],
     "correct": [
-        "b) structura, tablou, sir de caractere"
+      "2) structura, tablou, sir de caractere"
     ]
   },
 
@@ -314,12 +314,12 @@
     "id": 24,
     "question": "Alocarea dinamica a unui bloc de memorie cu instructiuni malloc() are loc in zona de memorie:",
     "ansList": [
-      "a) BIOS",
-      "b) heap",
-      "c) stock/stiva"
+      "1) BIOS",
+      "2) heap",
+      "3) stock/stiva"
     ],
     "correct": [
-        "b) heap"
+      "2) heap"
     ]
   },
 
@@ -327,12 +327,12 @@
     "id": 25,
     "question": "Ce afișează secvența următoare:\nfor( i = 0 ; i <= n ; i++)\n    for( j = 0 ; j <= i ; j++)\n        printf(\"%f\", mat[i][j]);",
     "ansList": [
-        "a) elementele de pe diagonala secundara",
-        "b) elementele de deasupra diagonalei secundare",
-        "c) elementele de sub diagonala principala (și de pe ea)"
+        "1) elementele de pe diagonala secundara",
+        "2) elementele de deasupra diagonalei secundare",
+        "3) elementele de sub diagonala principala (și de pe ea)"
     ],
     "correct": [
-        "c) elementele de sub diagonala principala (și de pe ea)"
+        "3) elementele de sub diagonala principala (și de pe ea)"
     ]
   },
 
@@ -340,12 +340,12 @@
     "id": 26,
     "question": "Ce rezultat are executia urmatorului program:\n#include<stdio.h>\nint main(){\n    int a = 5;\n    switch(a)\n    {\n        case 1: printf(\"UNU\");\n        case 2: printf(\"DOI\");\n        case 3+2: printf(\"TREI\");\n        case 5: printf(\"STOP\");\n    }\n    return 0;\n}",
     "ansList": [
-        "a) eroare pt ca nu exista break peste tot",
-        "b) eroare pt ca e duplicata eticheta 5",
-        "c) eroare pt ca nu e permisa eticheta 3+2"
+        "1) eroare pt ca nu exista break peste tot",
+        "2) eroare pt ca e duplicata eticheta 5",
+        "3) eroare pt ca nu e permisa eticheta 3+2"
     ],
     "correct": [
-        "b) eroare pt ca e duplicata eticheta 5"
+        "2) eroare pt ca e duplicata eticheta 5"
     ]
   },
 
@@ -353,12 +353,12 @@
     "id": 27,
     "question": "Metoda de proiectare ascendenta are ca dezavantaj:",
     "ansList": [
-      "a) detectarea erorilor in faza de integrare",
-      "b) detectarea erorilor in faza de proiectoare",
-      "c) imposibilitatea detectarii erorilor"
+      "1) detectarea erorilor in faza de integrare",
+      "2) detectarea erorilor in faza de proiectoare",
+      "3) imposibilitatea detectarii erorilor"
     ],
     "correct": [
-        "a) detectarea erorilor in faza de integrare"
+        "1) detectarea erorilor in faza de integrare"
     ]
   },
 
@@ -366,12 +366,12 @@
     "id": 28,
     "question": "Declararea unei variabile in C inseamna",
     "ansList": [
-        "a) asocierea unui nume cu un domeniu de valori",
-        "b) asocierea unui nume cu o zona de memorie",
-        "c) asocierea unui tip cu o zona de memorie"
+        "1) asocierea unui nume cu un domeniu de valori",
+        "2) asocierea unui nume cu o zona de memorie",
+        "3) asocierea unui tip cu o zona de memorie"
     ],
     "correct": [
-        "b) asocierea unui nume cu o zona de memorie"
+        "2) asocierea unui nume cu o zona de memorie"
     ]
   },
 
@@ -379,12 +379,12 @@
     "id": 29,
     "question": "Declaratia typedef struct\n{\n    int re;\n    int im;\n} Complex;",
     "ansList": [
-        "a) corecta",
-        "b) gresita",
-        "c) corecta in anumite situatii"
+        "1) corecta",
+        "2) gresita",
+        "3) corecta in anumite situatii"
     ],
     "correct": [
-        "b) gresita"
+        "2) gresita"
     ]
   },
 
@@ -392,13 +392,13 @@
     "id": 30,
     "question": "Care este rezultatul instructiunii printf din secventa urmatoare:\nint x = 524;\nint y = x-- % 20;\nprintf(\"%d%d\", x, y);",
     "ansList": [
-        "a) Eroare",
-        "b) 5233",
-        "c) 5244",
-        "d) 5234"
+        "1) Eroare",
+        "2) 5233",
+        "3) 5244",
+        "4) 5234"
     ],
     "correct": [
-        "d) 5234"
+        "4) 5234"
     ]
   },
 
@@ -407,13 +407,13 @@
     "id": 31,
     "question": "Pt afisarea in baza 10 a unui nr real in notatia zecimala, vom folosi secventa de formatare:",
     "ansList": [
-        "a) %b",
-        "b) %c",
-        "c) %f",
-        "d) %d"
+        "1) %b",
+        "2) %c",
+        "3) %f",
+        "4) %d"
     ],
     "correct": [
-        "c) %f"
+        "3) %f"
     ]
   },
 
@@ -421,12 +421,12 @@
     "id": 32,
     "question": "O variabila locala este recunoscuta din locul declaratiei pana la",
     "ansList": [
-        "a) sfarsitul programului",
-        "b) sfarsitul textului sursa",
-        "c) sfarsitul blocului in care a fost declarata"
+        "1) sfarsitul programului",
+        "2) sfarsitul textului sursa",
+        "3) sfarsitul blocului in care a fost declarata"
     ],
     "correct": [
-        "c) sfarsitul blocului in care a fost declarata"
+        "3) sfarsitul blocului in care a fost declarata"
     ]
   },
 
@@ -434,12 +434,12 @@
     "id": 33,
     "question": "Care este varianta corecta de alocare dinamica pentru tabloul bidimensional din secventa de mai jos:\nint *mat;\n// secventa\nfor (i = 0; i < 3; i++)\n{\n    for (j = 0; j < 4; j++)\n    {\n        mat[i * 4 + j] = 1;\n        printf(\"%d\", mat[i * 4 + j]);\n    }\n}",
     "ansList": [
-        "a) mat = (int*)malloc(3,4);",
-        "b) mat = (int*)malloc(3*4*sizeof(int));",
-        "c) mat = malloc(3*4*sizeof(int));"
+        "1) mat = (int*)malloc(3,4);",
+        "2) mat = (int*)malloc(3*4*sizeof(int));",
+        "3) mat = malloc(3*4*sizeof(int));"
     ],
     "correct": [
-        "b) mat = (int*)malloc(3*4*sizeof(int))"
+        "2) mat = (int*)malloc(3*4*sizeof(int))"
     ]
   },
 
@@ -447,12 +447,12 @@
     "id": 34,
     "question": "Ce se va afișa pe ecran în urma executării următoarei secvențe de instrucțiuni, știind că în variabila n au fost citite valorile 425, 24, 755\nint i, n;\nfor (i = 1; i < 4; i++)\n{\n    scanf(\"%d\", &n);\n    if (i % 2 == 0)\n        printf(\"%d \", n % 10);\n    else\n        printf(\"%d \", (n / 10) % 10);\n}",
     "ansList": [
-        "a) 3, 4, 6",
-        "b) 2, 4, 5 ",
-        "c) 4, 4, 4"
+        "1) 3, 4, 6",
+        "2) 2, 4, 5 ",
+        "3) 4, 4, 4"
     ],
     "correct": [
-        "b) 2, 4, 5 "
+        "2) 2, 4, 5 "
     ]
   },
 
@@ -460,12 +460,12 @@
     "id": 35,
     "question": "Ce rezultat are programul?\nstruct Ptr\n{\n    int x;\n    int y;\n};\nint main()\n{\n    struct Ptr p1 = {1, 2};\n    struct Ptr *p2 = &p1;\n    printf(\"%d  %d\", p2->x, p2->y);\n    return 0;\n}",
     "ansList": [
-        "a) eroare la compilare",
-        "b) 2 , 1",
-        "c) 1 , 2"
+        "1) eroare la compilare",
+        "2) 2 , 1",
+        "3) 1 , 2"
     ],
     "correct": [
-        "c) 1 , 2"
+        "3) 1 , 2"
     ]
   },
 
@@ -473,12 +473,12 @@
     "id": 36,
     "question": "Fie secvența de cod:\nint main()\n{\n    char s1[20] = \"aaa\";\n    char s2[10] = \"bbb\";\n    int k = strlen(strcpy(strcat(s1, s2), s2));\n    printf(\"%d\", k);\n    return 0;\n}",
     "ansList": [
-        "a) 9",
-        "b) 6",
-        "c) 3"
+        "1) 9",
+        "2) 6",
+        "3) 3"
     ],
     "correct": [
-        "c) 3"
+        "3) 3"
     ]
   },
 
@@ -486,13 +486,13 @@
     "id": 37,
     "question": "Care este rezultatul afișării din secvența următoare de program:\nint i = 1;\nwhile (i++ < 5)\n    printf(\"%d \", i++);",
     "ansList": [
-        "a) 8",
-        "b) 6",
-        "c) 2, 4, 6",
-        "d) 4"
+        "1) 8",
+        "2) 6",
+        "3) 2, 4, 6",
+        "4) 4"
     ],
     "correct": [
-        "c) 2, 4, 6"
+        "3) 2, 4, 6"
     ]
   },
 
@@ -500,12 +500,12 @@
     "id": 38,
     "question": "Ce afișează programul?\nint main()\n{\n    int x;\n    float y;\n    y = x = 5.5;\n    printf(\"x= %d y=  %f\", x, y);\n    return 0;\n}",
     "ansList": [
-        "a) 5,0000 , 5,5000",
-        "b) 5 , 5,5000",
-        "c) 5 5"
+        "1) 5,0000 , 5,5000",
+        "2) 5 , 5,5000",
+        "3) 5 5"
     ],
     "correct": [
-        "b) 5 , 5,5000"
+        "2) 5 , 5,5000"
     ]
   },
 
@@ -513,12 +513,12 @@
     "id": 39,
     "question": "Care este codul corespondent adăugării unui nod în fața listei?",
     "ansList": [
-        "a) q = prim;\nwhile(q->urm != NULL)\n    q = q->urm;\nq->urm = prim;",
-        "b) p->urm = prim;\nprim = p;",
-        "c) p->urm = prim;\np = prim;"
+        "1) q = prim;\nwhile(q->urm != NULL)\n    q = q->urm;\nq->urm = prim;",
+        "2) p->urm = prim;\nprim = p;",
+        "3) p->urm = prim;\np = prim;"
     ],
     "correct": [
-        "b) p->urm = prim;\nprim = p;"
+        "2) p->urm = prim;\nprim = p;"
     ]
   },
 
@@ -526,12 +526,12 @@
     "id": 40,
     "question": "Ce va afișa următoarea secvență de cod:\nint *v = 20;\nprintf(\"%d\", *v);",
     "ansList": [
-        "a) 20",
-        "b) AHF200",
-        "c) Eroare"
+        "1) 20",
+        "2) AHF200",
+        "3) Eroare"
     ],
     "correct": [
-        "c) Eroare"
+        "3) Eroare"
     ]
   },
 
@@ -539,12 +539,12 @@
     "id": 41,
     "question": "Care este rezultatul transformarii nr 243 din baza 10 in baza 16",
     "ansList": [
-        "a) 154",
-        "b) F3",
-        "c) 3F"
+        "1) 154",
+        "2) F3",
+        "3) 3F"
     ],
     "correct": [
-        "b) F3"
+        "2) F3"
     ]
   },
 
@@ -552,12 +552,12 @@
     "id": 42,
     "question": "Cum se declara o variabila de tip vector de sir de caractere in limbajul C?",
     "ansList": [
-        "a) string sir[20]",
-        "b) char sir[20]",
-        "c) sir[20][20]"
+        "1) string sir[20]",
+        "2) char sir[20]",
+        "3) sir[20][20]"
     ],
     "correct": [
-        "b) char sir[20]"
+        "2) char sir[20]"
     ]
   },
 
@@ -565,12 +565,12 @@
     "id": 43,
     "question": "Care va fi rezultatul executiei urmatorului program pentru x=10 si y=20?\nint expmat(int a, int b)\n{\n    float c;\n    c = (a + b) / 2;\n    return 0;\n}\nint main()\n{\n    int x, y;\n    float c = 0;\n    expmat(x, y);\n    printf(\"Rezultatul este %f\", c);\n    return 0;\n}",
     "ansList": [
-        "a) Erori la compilare",
-        "b) 0",
-        "c) 15"
+        "1) Erori la compilare",
+        "2) 0",
+        "3) 15"
     ],
     "correct": [
-        "a) Erori la compilare"
+        "1) Erori la compilare"
     ]
   },
 
@@ -578,12 +578,12 @@
     "id": 44,
     "question": "Ce semnifica modul \"w+t\" din urmatoarea secventa de program?\nFILE *fisier;\nfisier = fopen(\"exemplu.txt\", \"w+t\");",
     "ansList": [
-        "a) Doar citire; dacă fisierul nu există, se semnalează o eroare.",
-        "b) Doar scriere; dacă fisierul nu există, acesta va fi creat, iar dacă există, va fi suprascris.",
-        "c) Citire și scriere; dacă fisierul nu există, acesta va fi creat, iar dacă există, va fi suprascris."
+        "1) Doar citire; dacă fisierul nu există, se semnalează o eroare.",
+        "2) Doar scriere; dacă fisierul nu există, acesta va fi creat, iar dacă există, va fi suprascris.",
+        "3) Citire și scriere; dacă fisierul nu există, acesta va fi creat, iar dacă există, va fi suprascris."
     ],
     "correct": [
-        "b) Doar scriere; dacă fisierul nu există, acesta va fi creat, iar dacă există, va fi suprascris."
+        "2) Doar scriere; dacă fisierul nu există, acesta va fi creat, iar dacă există, va fi suprascris."
     ]
   },
 
@@ -591,12 +591,12 @@
     "id": 45,
     "question": "Ce va afișa programul?\n#include<stdio.h>\n\nint swap(char *sir1, char *sir2)\n{\n    char *temp = sir1;\n    sir1 = sir2;\n    sir2 = temp;\n    return 0;\n}\n\nint main()\n{\n    char *s1 = \"Vacanta\";\n    char *s2 = \"Sesiune\";\n    swap(s1, s2);\n    printf(\"Sirul 1 este %s, Sirul 2 este %s\", s1, s2);\n    return 0;\n}",
     "ansList": [
-        "a) Sirul 1 este Vacanta, Sirul 2 este Sesiune",
-        "b) Sirul 1 este Sesiune, Sirul 2 este Vacanta",
-        "c) Nu se afișează nimic"
+        "1) Sirul 1 este Vacanta, Sirul 2 este Sesiune",
+        "2) Sirul 1 este Sesiune, Sirul 2 este Vacanta",
+        "3) Nu se afișează nimic"
     ],
     "correct": [
-        "a) Sirul 1 este Vacanta, Sirul 2 este Sesiune"
+        "1) Sirul 1 este Vacanta, Sirul 2 este Sesiune"
     ]
   },
 
@@ -903,12 +903,12 @@
     "id": 69,
     "question": "Pt situatia urmatoare\ntypedef enum{masa, casa, curte,caine,pom,pisica}domestic;\ndomestic d;\ncare este intregul asociat elementului \"caine\"?",
     "ansList": [
-        "1)5",
-        "2)4",
-        "3)3"
+        "1) 5",
+        "2) 4",
+        "3) 3"
     ],
     "correct": [
-        "3)3"
+        "3) 3"
     ]
   },
 
@@ -923,6 +923,267 @@
     "correct": [
         "3) int funct(int x){return x=x+1;}"
     ]
+  },
+
+  {
+    "id": 71,
+    "question": "Secventa:\nchar s[] = \"Bubu\";\n*s = 'C';\nprintf(\"%s\", s);\nva afisa:",
+    "ansList": [
+      "1) Bubu",
+      "2) Eroare de compilare",
+      "3) Cubu"
+    ],
+    "correct": [
+      "3) Cubu"
+    ]
+  },
+  
+  {
+    "id": 72,
+    "question": "Precizati ce va afisa secventa\nint multime[]={1,12,0x61};\nint *ptr;\nptr=multime+2;\nprintf(\"%o %c\", *ptr);",
+    "ansList": [
+      "1) 61",
+      "2) 0x61",
+      "3) Simbolul corespunzator codului ASCII cu valoarea 97(\"a\")"
+    ],
+    "correct": [
+      "3) Simbolul corespunzator codului ASCII cu valoarea 97(\"a\")"
+    ]
+  },
+
+  {
+    "id": 73,
+    "question": "Care va fi noua valoare a variabilei x(in baza 10) dupa aplicarea operatorului de deplasare la stanga in urmatoarea secventa de cod?\nint x=255;\nx=x<<2;",
+    "ansList": [
+      "1) 1020",
+      "2) 253",
+      "3) 1024"
+    ],
+    "correct": [
+      "1) 1020"
+    ]
+  },
+
+  {
+    "id": 74,
+    "question": "Spatiul de memorie alocat dinamic se afla",
+    "ansList": [
+      "1) in stiva/stack",
+      "2) in heap",
+      "3) in memoria auxiliara"
+    ],
+    "correct": [
+      "2) in heap"
+    ]
+  },
+  
+  {
+    "id": 75,
+    "question": "Pentru\nint n=10,m=4;\nfloat x;\nvaloarea expresiei x=1.5 + n/m este:",
+    "ansList": [
+      "1) 4.0",
+      "2) 3.5",
+      "3) eroare"
+    ],
+    "correct": [
+      "2) 3.5"
+    ]
+  },
+  
+  {
+    "id": 76,
+    "question": "Secventa\nstruct film{\nchar titlu[50];\nint an;}",
+    "ansList": [
+      "1) defineste o variabila de tip structura",
+      "2) este gresita",
+      "3) defineste un tip de structura"
+    ],
+    "correct": [
+      "3) defineste un tip de structura"
+    ]
+  },
+
+  {
+    "id": 77,
+    "question": "Ce va afisa urmatorul program\n#include <stdio.h>\nint main()\n{int rezultat, a=3;\nfloat b=6;\nrezultat=b%a;\nprintf(\"%d\", rezultat);\nreturn 0;\n}",
+    "ansList": [
+      "1) 1",
+      "2) 0",
+      "3) eroare de compilare"
+    ],
+    "correct": [
+      "3) eroare de compilare"
+    ]
+  },
+  
+  {
+    "id": 78,
+    "question": "Care din urmatorii operatori este operatorul logic NOT?",
+    "ansList": [
+      "1) &",
+      "2) !",
+      "3) |"
+    ],
+    "correct": [
+      "2) !"
+    ]
+  },
+  
+  {
+    "id": 79,
+    "question": "Ce tip de variabile nu accepta instuctiunea switch?",
+    "ansList": [
+      "1) char",
+      "2) int",
+      "3) float"
+    ],
+    "correct": [
+      "3) float"
+    ]
+  },
+  
+  {
+    "id": 80,
+    "question": "Ce va afisa urmatorul cod sursa?\n#include <stdio.h>\nint main()\n{int x=1;\ndo\n\tprintf(\"%d\", x);\nwhile(x++<=1);\nreturn 0;\n}",
+    "ansList": [
+      "1) 1",
+      "2) 1 2",
+      "3) Eroare de executie"
+    ],
+    "correct": [
+      "2) 1 2"
+    ]
+  },
+
+  {
+    "id": 81,
+    "question": "Care va fi valoarea variabilei a dupa atribuirile din urmatoarea secventa de cod:\nint a=3,b=5,*p;\np=&b;\na=*p;",
+    "ansList": [
+      "1) 5",
+      "2) 4",
+      "3) 3"
+    ],
+    "correct": [
+      "1) 5"
+    ]
+  },
+  
+  {
+    "id": 82,
+    "question": "Secventa de program\n...int i=0;\nswitch(i)\n{case <0>:printf(<<PC>>);\n\tbreak;\ncase <1>:printf(<<LSD>>);\n\tbreak;\ndefault:printf(<<vacanta>>);\n};\nare rezultatul",
+    "ansList": [
+      "1) vacanta",
+      "2) PC",
+      "3) PCLSD"
+    ],
+    "correct": [
+      "2) PC"
+    ]
+  },
+
+  {
+    "id": 83,
+    "question": "Alegeti secventa corecta de program in C care are ca rezultat suma\n elementelor unui tablou de numere intregi \"tab\" care contine 15 elemente\nsuma = 0;",
+    "ansList": [
+      "1) for(i=0;i<=15;i++)suma = suma + tab[i];",
+      "2) for(i==0;i<15;i++)suma = suma + tab[i];",
+      "3) for(i=0;i<15;i++)suma = suma + tab[i];"
+    ],
+    "correct": [
+      "3) for(i=0;i<15;i++)suma = suma + tab[i];"
+    ]
+  },
+    
+  {
+    "id": 84,
+    "question": "Care este rezultatul secventei:\n...int a[]={18,28,38};\nprintf(\"%d\", *a+1);",
+    "ansList": [
+      "1) 18",
+      "2) 19",
+      "3) 28"
+    ],
+    "correct": [
+      "2) 19"
+    ]
+  },
+  
+  {
+    "id": 85,
+    "question": "Secventa\nconst int a=5;\na++;\nprintf(\"%d\", a);\nafiseaza:",
+    "ansList": [
+      "1) 5",
+      "2) 6",
+      "3) eroare de compilare"
+    ],
+    "correct": [
+      "3) eroare de compilare"
+    ]
+  },
+  
+  {
+    "id": 86,
+    "question": "Ce este gresit in urmatoarea secventa:\nchar *sirp;\nstrcpy(sirp, \"Ianuarie\");",
+    "ansList": [
+      "1) Secventa este corecta",
+      "2) Pointerul sirp nu este initializat",
+      "3) Nu se poate copia un sir de caractere intr-un pointer"
+    ],
+    "correct": [
+      "2) Pointerul sirp nu este initializat"
+    ]
+  },
+
+  {
+    "id": 87,
+    "question": "Care este rezultatul secventei de mai jos:\nint main();\n{int i;\nfor(i=0;i<=255;i++)printf(<< o/o c o/o d>>, i, i);\nreturn 0;\n}",
+    "ansList": [
+      "1) 2 randuri de valori intregi de la 0 la 255",
+      "2) codurile ASCII si val intreaga coresp de la 0 la 255",
+      "3) codurile ASCII si val intreaga coresp pt litere mari, mici si cifre"
+    ],
+    "correct": [
+      "2) codurile ASCII si val intreaga coresp de la 0 la 255"
+    ]
+  },
+  
+  {
+    "id": 88,
+    "question": "Este posibil ca o functie in c sa modifice o variabila in fct pe care a apelat-o?",
+    "ansList": [
+      "1) Dc in apelul functiei se foloseste asociat cu parametrul resp operatorul <<>>",
+      "2) nu",
+      "3) dc in apelul fct se foloseste asociat cu parametrul resp operatorul &"
+    ],
+    "correct": [
+      "3) dc in apelul fct se foloseste asociat cu parametrul resp operatorul &"
+    ]
+  },
+  
+  {
+    "id": 89,
+    "question": "Limbajul masina",
+    "ansList": [
+      "1) este un limbaj de nivel inalt",
+      "2) depinde de tipul microprocesorului",
+      "3) este utilizat si pentru a scrie programe sursa"
+    ],
+    "correct": [
+      "2) depinde de tipul microprocesorului"
+    ]
+  },
+  
+  {
+    "id": 90,
+    "question": "Considerand declaratia:\nchar sir[10];\natribuirea\nsir = <<exemplu>> este",
+    "ansList": [
+      "1) executata doar in standardul ANSI",
+      "2) incorecta",
+      "3) corecta"
+    ],
+    "correct": [
+      "2) incorecta"
+    ]
   }
+  
 
 ]
