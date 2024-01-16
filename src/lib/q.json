@@ -1070,7 +1070,7 @@
   
   {
     "id": 82,
-    "question": "Secventa de program\n...int i=0;\nswitch(i)\n{case <0>:printf(<<PC>>);\n\tbreak;\ncase <1>:printf(<<LSD>>);\n\tbreak;\ndefault:printf(<<vacanta>>);\n};\nare rezultatul",
+    "question": "Secventa de program\n...int i=0;\nswitch(i)\n{case <0>:printf(\"PC\");\n\tbreak;\ncase '1':printf(\"LSD\");\n\tbreak;\ndefault:printf(\"vacanta\");\n};\nare rezultatul",
     "ansList": [
       "1) vacanta",
       "2) PC",
@@ -1135,7 +1135,7 @@
 
   {
     "id": 87,
-    "question": "Care este rezultatul secventei de mai jos:\nint main();\n{int i;\nfor(i=0;i<=255;i++)printf(<< o/o c o/o d>>, i, i);\nreturn 0;\n}",
+    "question": "Care este rezultatul secventei de mai jos:\nint main();\n{int i;\nfor(i=0;i<=255;i++)printf(\"%c %d\", i, i);\nreturn 0;\n}",
     "ansList": [
       "1) 2 randuri de valori intregi de la 0 la 255",
       "2) codurile ASCII si val intreaga coresp de la 0 la 255",
@@ -1174,7 +1174,7 @@
   
   {
     "id": 90,
-    "question": "Considerand declaratia:\nchar sir[10];\natribuirea\nsir = <<exemplu>> este",
+    "question": "Considerand declaratia:\nchar sir[10];\natribuirea\nsir = \"exemplu\" este",
     "ansList": [
       "1) executata doar in standardul ANSI",
       "2) incorecta",
