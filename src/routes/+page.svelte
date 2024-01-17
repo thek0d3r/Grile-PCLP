@@ -5,20 +5,6 @@
 
     import { onMount } from 'svelte';
 
-    let finalMsgBad = [
-        "Nu a fost să fie frate! Ce să îi faci? 😐",
-        "Mai bagă o fisă! 🪙",
-        "De la lag! 🖥️",
-        "Nu băga la păcănele perioada asta 🎰"
-    ];
-    
-    let finalMsgGood = [
-        "Felicitări! Le-ai nimerit! 👏",
-        "Ne vedem în semestrul următor 🎓",
-        "Ai prins comp-ul bun 🖥️",
-        "Poți să bagi liniștit la păcănele 🎰"
-    ];
-
     let flashcards = [];
     
     onMount(async () => {
