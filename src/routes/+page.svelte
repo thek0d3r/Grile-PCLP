@@ -1,6 +1,7 @@
 <script>
     import Flashcard from './Flashcard.svelte';
     import ProgressBar from './ProgressBar.svelte';
+    import FinishScreen from './FinishScreen.svelte';
 
     import { onMount } from 'svelte';
 
@@ -173,33 +174,7 @@
                 <p>P.S. Dacă sari peste o întrebare, se consideră că ai răspuns greșit! Așa că nu le ocoli! Relaxează-te și ia-ți timpul necesar, nu e grabă 🙂</p>
             </div>
             {:else}
-                <div class="row">
-                    <div class="title">
-                        <h1>Finished!</h1>
-                    </div>    
-                </div>
-
-                <div class="row">
-                    <h3 class:red={grade < 5} class:green={grade >= 5}>Nota: {(correctAns * 10 / flashcards.length).toFixed(2)}</h3>
-                    <p>Correct: {correctAns}</p>
-                    <p>Total: {flashcards.length}</p>
-                </div>
-
-                {#if grade < 5}
-                    <div class="row">
-                        <p class="final-msg">{finalMsgBad[Math.floor(Math.random() * 3)]}</p>
-                    </div>
-                {:else}
-                    <div class="row">
-                        <p class="final-msg">{finalMsgGood[Math.floor(Math.random() * 3)]}</p>
-                    </div>
-                {/if}
-
-                <div class="row">
-                    <div class="container">
-                        <button type="button" on:click={restart} class="btn btn-outline-info">Restart</button>
-                    </div>
-                </div>
+                <FinishScreen grade={grade} restart={restart} correctAns={correctAns}></FinishScreen>
             {/if}
         </div>
     {:else}
