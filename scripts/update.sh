@@ -11,11 +11,11 @@ if git rev-parse HEAD &> /dev/null; then
     REMOTE=$(git rev-parse origin/main)
 
     if [ $LOCAL != $REMOTE ]; then
-	# Pull the new commit
+	    # Pull the new commit
         echo "New Git commit found. Updating..."
-	git pull        
+	    git pull        
         
-	# Check if Docker container exists
+	    # Check if Docker container exists
         if docker ps -a --format '{{.Names}}' | grep -q grile-pclp; then
             echo "Stopping and removing existing Docker container..."
             docker stop grile-pclp
