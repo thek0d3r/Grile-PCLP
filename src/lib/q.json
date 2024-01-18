@@ -439,7 +439,7 @@
         "3) mat = malloc(3*4*sizeof(int));"
     ],
     "correct": [
-        "2) mat = (int*)malloc(3*4*sizeof(int))"
+        "2) mat = (int*)malloc(3*4*sizeof(int));"
     ]
   },
 

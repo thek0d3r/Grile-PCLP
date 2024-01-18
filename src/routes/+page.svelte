@@ -27,6 +27,8 @@
     let selectedCheckboxValues = {};
     let correctAns = 0;
     let grade = 0;
+    let learnMode = false;
+    let submitted = false;
 
     let submitButton;
     let skipButton;
@@ -36,6 +38,7 @@
         currentCardIndex += 1;
         selectedAnswer = [];
         selectedCheckboxValues = {};
+        submitted = false;
 
         skipButton.blur();
     }
@@ -45,14 +48,18 @@
         
         if (selectedAnswer.length === 0) return;
 
+        submitted = true;
+
         const currentCard = flashcards[currentCardIndex];
         isCorrect = arraysEqual(selectedAnswer, currentCard.correct);
 
         if (isCorrect) correctAns += 1;
 
-        setTimeout(() => {
-            nextCard();
-        }, 500);
+        if(!learnMode) {
+            setTimeout(() => {
+                nextCard();
+            }, 500);
+        }
     }
 
     function shuffle(array) {
@@ -144,16 +151,26 @@
                     handleKeypress={handleKeypress}>
                 </Flashcard>
             </div>
-        
+
             <div class="controls">
-                <button type="button" class="btn btn-outline-primary" on:click={validateAnswer} bind:this={submitButton}>Trimite</button>
-                <button type="button" class="btn btn-outline-danger" on:click={nextCard} bind:this={skipButton}>Sari peste</button>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" bind:checked={learnMode}> 
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Modul de învățare</label>
+                </div>
+                <br />
+                <button type="button" class="btn" on:click={!submitted ? validateAnswer : nextCard} class:btn-outline-primary={!submitted || !learnMode} class:btn-outline-success={submitted && learnMode} bind:this={submitButton}>{!learnMode || !submitted ? "Trimite" : "Următoarea întrebare"}</button>
+                {#if !learnMode}
+                    <button type="button" class="btn btn-outline-danger" on:click={nextCard} bind:this={skipButton}>Sari peste</button>
+                {/if}
             </div>
 
             {#if isCorrect === true}
                 <p class="result correct">Correct!</p>
             {:else if isCorrect === false}
                 <p class="result incorrect">Incorrect!</p>
+                {#if learnMode === true}
+                    <p class="result correct">Răspunsul corect este: <br /> {flashcards[currentCardIndex].correct.join(', ')}</p>
+                {/if}
             {/if}
     
             <div class="disclaimer">
