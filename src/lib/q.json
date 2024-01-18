@@ -583,7 +583,7 @@
         "3) Citire și scriere; dacă fisierul nu există, acesta va fi creat, iar dacă există, va fi suprascris."
     ],
     "correct": [
-        "2) Doar scriere; dacă fisierul nu există, acesta va fi creat, iar dacă există, va fi suprascris."
+        "3) Citire și scriere; dacă fisierul nu există, acesta va fi creat, iar dacă există, va fi suprascris."
     ]
   },
 
@@ -609,7 +609,7 @@
         "3) doar citire, daca fisierul nu exista se semnaleaza o eroare"
     ],
     "correct": [
-        "1) doar scriere; daca fisierul nu exista acesta va fi creat, iar dc exista va fi suprascris"
+        "2) citire si scriere; daca fisierul nu exista acesta va fi creat, iar dc exista va fi suprascris"
     ]
   },
   
@@ -804,7 +804,7 @@
         "3) citire si scriere, dc fisierul nu exista va fi creat, iar daca exista va fi suprascris"
     ],
     "correct": [
-        "1) doar scriere, dc fisierul nu exista va fi creat, iar daca exista se va adauga la sfarsitul lui"
+        "3) citire si scriere, dc fisierul nu exista va fi creat, iar daca exista va fi suprascris"
     ]
   },
 
