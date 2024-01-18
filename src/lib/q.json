@@ -164,14 +164,14 @@
 
   {
     "id": 13,
-    "question": "O functie modifica o variabile in functia care a apelat-o daca:",
+    "question": "O functie modifica o variabila in functia care a apelat-o daca:",
     "ansList": [
       "1) in apelul fct se va preciza adresa variabilei a carei valoare va fi modificat si...",
       "2) in definitia functiei se va preciza adresa variabilei a carei valoare va fi modificat si...",
       "3) in declaratia functiei se va preciza adresa variabilei a carei valoare va fi modificat si..."
     ],
     "correct": [
-      "1) in apelul fct se va preciza adresa variabilei a carei valoare va fi modificat si..."
+      "2) in definitia functiei se va preciza adresa variabilei a carei valoare va fi modificat si..."
     ]
   },
 
