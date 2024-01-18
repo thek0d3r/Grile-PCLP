@@ -113,7 +113,7 @@
     "question": "Apelul care implica functia standard qsort:\nqsort(t, i, sizeof(int), (cmPtr)cmp)?",
     "ansList": [
       "1) E corect",
-      "2) Sizeof(int) e gresit",
+      "2) sizeof(int) e gresit",
       "3) Functia cmp e gresita"
     ],
     "correct": [
