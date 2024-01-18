@@ -151,7 +151,11 @@
                     handleKeypress={handleKeypress}>
                 </Flashcard>
             </div>
-
+            {:else}
+                <FinishScreen grade={grade} restart={restart} correctAns={correctAns}></FinishScreen>
+            {/if}
+        </div>
+        <div class="row">
             <div class="controls">
                 <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" bind:checked={learnMode}> 
@@ -163,7 +167,8 @@
                     <button type="button" class="btn btn-outline-danger" on:click={nextCard} bind:this={skipButton}>Sari peste</button>
                 {/if}
             </div>
-
+        </div>
+        <div class="row">
             {#if isCorrect === true}
                 <p class="result correct">Correct!</p>
             {:else if isCorrect === false}
@@ -172,14 +177,14 @@
                     <p class="result correct">Răspunsul corect este: <br /> {flashcards[currentCardIndex].correct.join(', ')}</p>
                 {/if}
             {/if}
-    
+        </div>
+        {#if currentCardIndex == 0}
+        <div class="row">
             <div class="disclaimer">
                 <p>P.S. Dacă sari peste o întrebare, se consideră că ai răspuns greșit! Așa că nu le ocoli! Relaxează-te și ia-ți timpul necesar, nu e grabă 🙂</p>
             </div>
-            {:else}
-                <FinishScreen grade={grade} restart={restart} correctAns={correctAns}></FinishScreen>
-            {/if}
         </div>
+        {/if}
     {:else}
         <p>Se incarcă întrebările...</p>
     {/if}
