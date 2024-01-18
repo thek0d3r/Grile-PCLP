@@ -174,7 +174,7 @@
             {:else if isCorrect === false}
                 <p class="result incorrect">Incorrect!</p>
                 {#if learnMode === true}
-                    <p class="result correct">Răspunsul corect este: <br /> {flashcards[currentCardIndex].correct.join(', ')}</p>
+                    <p class="correct">Răspunsul corect este: <br /> {flashcards[currentCardIndex].correct.join(', ')}</p>
                 {/if}
             {/if}
         </div>
