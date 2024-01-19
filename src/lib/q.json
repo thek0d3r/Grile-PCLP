@@ -531,7 +531,7 @@
         "3) Eroare"
     ],
     "correct": [
-        "3) Eroare"
+      "1) 20"
     ]
   },
 
@@ -745,7 +745,7 @@
 
   {
     "id": 57,
-    "question": "Ce va afisa urmatoare secventa de cod?\nint x, y;\nint x = 7;\ny = x >> 2;\nprintf(\"%d\", y);",
+    "question": "Ce va afisa urmatoarea secventa de cod?\nint x, y;\nint x = 7;\ny = x >> 2;\nprintf(\"%d\", y);",
     "ansList": [
         "1) 0",
         "2) 1",
