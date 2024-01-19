@@ -801,10 +801,10 @@
     "ansList": [
         "1) doar scriere, dc fisierul nu exista va fi creat, iar daca exista se va adauga la sfarsitul lui",
         "2) doar scriere, de fisierul nu exista va fi creat, iar daca exista va fi suprascris",
-        "3) citire si scriere, dc fisierul nu exista va fi creat, iar daca exista va fi suprascris"
+        "3) citire si scriere, dc fisierul nu exista va fi creat, iar daca exista se va adauga la sfarsitul lui"
     ],
     "correct": [
-        "3) citire si scriere, dc fisierul nu exista va fi creat, iar daca exista va fi suprascris"
+        "3) citire si scriere, dc fisierul nu exista va fi creat, iar daca exista se va adauga la sfarsitul lui"
     ]
   },
 
