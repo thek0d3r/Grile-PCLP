@@ -1183,7 +1183,50 @@
     "correct": [
       "2) incorecta"
     ]
+  },
+
+  {
+    "id": 91,
+    "question": "#include \"stdio.h\" \n int main() \n int x, y = 5, z = 5; \nx = y == z;\n printf(\"%d\", x);\ngetchar();\nreturn 0;",
+    "ansList":[
+      "a) 0",
+      "b) 1",
+      "c) 5",
+      "d) Eroare"
+    ],
+    "correct": [
+      "b) 1"
+    ]
+  },
+
+  {
+    "id": 92,
+    "question": "Ce se intampla daca shiftezi la stanga cu 2 pozitii (<<2) un nr intreg ?",
+    "ansList":[
+      "a)se imparte numarul cu 4(/4)",
+      "b)se inmulteste numarul cu 4(*4)",
+      "c)se aduna numarul cu 4(+4)",
+      "d)biti de 1 fac schimb cu biti de 0"
+    ],
+    "correct":[
+      "b)se inmulteste numarul cu 4(*4)"
+    ]
+  },
+
+  {
+    "id": 93,
+    "question": "#include <stdio.h>\nint main(){\n int i = 1, 2, 3;\nprintf(\"%d\", i);\nreturn 0;\n}",
+    "ansList":[
+      "a) 1",
+      "b) 2",
+      "c)Eroare",
+      "d)Garbage "
+    ],
+    "correct":[
+      "c)Eroare"
+    ]
   }
-  
+     
+
 
 ]
