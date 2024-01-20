@@ -140,50 +140,51 @@
     <br />
 
     {#if flashcards.length > 0}
-        <div class="row">
-            {#if currentCardIndex != 60}
-            <div class="container">
-                <Flashcard 
-                    flashcards={flashcards} 
-                    currentCardIndex={currentCardIndex} 
-                    selectedCheckboxValues={selectedCheckboxValues} 
-                    handleChange={handleChange} 
-                    handleKeypress={handleKeypress}>
-                </Flashcard>
-            </div>
-            {:else}
-                <FinishScreen grade={grade} restart={restart} correctAns={correctAns}></FinishScreen>
-            {/if}
-        </div>
-        <div class="row">
-            <div class="controls">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" bind:checked={learnMode}> 
-                    <label class="form-check-label" for="flexSwitchCheckDefault">Modul de învățare</label>
+        {#if currentCardIndex != 60}
+            <div class="row">
+                <div class="container">
+                    <Flashcard 
+                        flashcards={flashcards} 
+                        currentCardIndex={currentCardIndex} 
+                        selectedCheckboxValues={selectedCheckboxValues} 
+                        handleChange={handleChange} 
+                        handleKeypress={handleKeypress}>
+                    </Flashcard>
                 </div>
-                <br />
-                <button type="button" class="btn" on:click={!submitted ? validateAnswer : nextCard} class:btn-outline-primary={!submitted || !learnMode} class:btn-outline-success={submitted && learnMode} bind:this={submitButton}>{!learnMode || !submitted ? "Trimite" : "Următoarea întrebare"}</button>
-                {#if !learnMode}
-                    <button type="button" class="btn btn-outline-danger" on:click={nextCard} bind:this={skipButton}>Sari peste</button>
+                
+            </div>
+            <div class="row">
+                <div class="controls">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" bind:checked={learnMode}> 
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Modul de învățare</label>
+                    </div>
+                    <br />
+                    <button type="button" class="btn" on:click={!submitted ? validateAnswer : nextCard} class:btn-outline-primary={!submitted || !learnMode} class:btn-outline-success={submitted && learnMode} bind:this={submitButton}>{!learnMode || !submitted ? "Trimite" : "Următoarea întrebare"}</button>
+                    {#if !learnMode}
+                        <button type="button" class="btn btn-outline-danger" on:click={nextCard} bind:this={skipButton}>Sari peste</button>
+                    {/if}
+                </div>
+            </div>
+            <div class="row">
+                {#if isCorrect === true}
+                    <p class="result correct">Correct!</p>
+                {:else if isCorrect === false}
+                    <p class="result incorrect">Incorrect!</p>
+                    {#if learnMode === true}
+                        <p class="correct">Răspunsul corect este: <br /> {flashcards[currentCardIndex].correct.join(', ')}</p>
+                    {/if}
                 {/if}
             </div>
-        </div>
-        <div class="row">
-            {#if isCorrect === true}
-                <p class="result correct">Correct!</p>
-            {:else if isCorrect === false}
-                <p class="result incorrect">Incorrect!</p>
-                {#if learnMode === true}
-                    <p class="correct">Răspunsul corect este: <br /> {flashcards[currentCardIndex].correct.join(', ')}</p>
-                {/if}
+            {#if currentCardIndex == 0}
+            <div class="row">
+                <div class="disclaimer">
+                    <p>P.S. Dacă sari peste o întrebare, se consideră că ai răspuns greșit! Așa că nu le ocoli! Relaxează-te și ia-ți timpul necesar, nu e grabă 🙂</p>
+                </div>
+            </div>
             {/if}
-        </div>
-        {#if currentCardIndex == 0}
-        <div class="row">
-            <div class="disclaimer">
-                <p>P.S. Dacă sari peste o întrebare, se consideră că ai răspuns greșit! Așa că nu le ocoli! Relaxează-te și ia-ți timpul necesar, nu e grabă 🙂</p>
-            </div>
-        </div>
+        {:else}
+                <FinishScreen grade={grade} restart={restart} correctAns={correctAns}></FinishScreen>
         {/if}
     {:else}
         <p>Se incarcă întrebările...</p>
